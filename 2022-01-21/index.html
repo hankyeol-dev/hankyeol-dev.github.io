@@ -1,0 +1,428 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.7.0"/><style data-href="/styles.d7dc808fdc94f5b87548.css" data-identity="gatsby-global-css">/*
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:540px){.container{max-width:540px}}@media (min-width:900px){.container{max-width:900px}}.hover-text-gray{transition-duration:.1s}.hover-text-gray:hover{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity));color:rgb(255 255 255/var(--tw-text-opacity));font-weight:500;transition-timing-function:cubic-bezier(.4,0,1,1)}.header{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);background-color:rgb(255 255 255/var(--tw-bg-opacity));border-bottom-color:rgb(52 58 64/var(--tw-border-opacity));border-bottom-width:1px;font-size:.875rem;line-height:1.25rem;margin-bottom:1rem;padding:2.5rem 5%;position:sticky;top:0;width:100%;z-index:30}@media (min-width:900px){.header{font-size:1.125rem;font-weight:700;line-height:1.75rem}}.nav-container{align-items:center;display:flex;justify-content:space-between;margin-left:auto;margin-right:auto;max-width:64rem}.footer{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity));border-top-color:rgb(52 58 64/var(--tw-border-opacity));border-top-width:1px;bottom:0;margin-top:1rem;padding:1.5rem 5%;position:relative;width:100%;z-index:30}.footer-container{align-items:flex-start;display:flex;flex-direction:column;justify-content:space-between;margin-left:auto;margin-right:auto;max-width:64rem}@media (min-width:540px){.footer-container{flex-direction:row}}.footer-info-container{align-items:flex-end;display:flex;flex-direction:column;font-size:.875rem;font-weight:300;line-height:1.25rem;row-gap:.75rem}.footer-aboutMe{align-items:center;-moz-column-gap:.5rem;column-gap:.5rem;display:flex}.footer-aboutMe-btn{--tw-border-opacity:1;border-color:rgb(52 58 64/var(--tw-border-opacity));border-width:1px;cursor:pointer;padding:.25rem}.footer-aboutMe-btn-hover:hover{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(52 58 64/var(--tw-bg-opacity));color:rgb(255 255 255/var(--tw-text-opacity));transition-duration:.1s}.postCard-category{--tw-border-opacity:1;--tw-text-opacity:1;border-color:rgb(52 58 64/var(--tw-border-opacity));border-width:1px;color:rgb(52 58 64/var(--tw-text-opacity));font-size:.5rem;font-weight:100;padding:.1rem .5rem}@media (min-width:540px){.postCard-category{font-size:.75rem;font-weight:400;line-height:1rem}}.postCard-title{font-size:.875rem;font-weight:500;line-height:1.25rem;margin-bottom:.25rem}@media (min-width:540px){.postCard-title{font-size:1rem}}@media (min-width:900px){.postCard-title{font-size:1.125rem;font-weight:600;line-height:1.75rem;margin-bottom:.5rem}}.postCard-content-preview{--tw-text-opacity:1;-webkit-box-orient:vertical;-webkit-line-clamp:1;color:rgb(73 80 87/var(--tw-text-opacity));display:-webkit-box;font-size:.75rem;font-weight:300;line-height:1rem;overflow:hidden}@media (min-width:540px){.postCard-content-preview{font-weight:400}}@media (min-width:900px){.postCard-content-preview{-webkit-box-orient:vertical;-webkit-line-clamp:2;display:-webkit-box;font-size:.875rem;line-height:1.25rem;margin-bottom:.75rem;overflow:hidden}}.postCard-moreBtn{--tw-text-opacity:1;color:rgb(73 80 87/var(--tw-text-opacity));font-size:.75rem;line-height:1rem;margin-bottom:.25rem}.postCard-moreBtn:hover{padding-right:.5rem;transition-duration:.15s;transition-timing-function:linear}.postCard-hover:hover{--tw-translate-x:0px;--tw-translate-y:-4px;--tw-drop-shadow:drop-shadow(0 1px 1px rgba(0,0,0,.05));--tw-translate-z:0px;filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate3d(var(--tw-translate-x),var(--tw-translate-y),var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transition-duration:.3s}.postCard-tag-Container{align-items:center;-moz-column-gap:.25rem;column-gap:.25rem;display:flex;flex-direction:row;margin-bottom:.5rem}@media (min-width:540px){.postCard-tag-Container{-moz-column-gap:.5rem;column-gap:.5rem}}@media (min-width:900px){.postCard-tag-Container{margin-bottom:1rem}}.categoryAside-container{--tw-border-opacity:1;--tw-drop-shadow:drop-shadow(0 1px 1px rgba(0,0,0,.05));align-items:flex-start;border-color:rgb(52 58 64/var(--tw-border-opacity));border-width:1px;display:flex;filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);flex-direction:column;justify-content:center;padding:1rem;row-gap:.75rem;width:100%}@media (min-width:900px){.categoryAside-container{align-self:flex-start;padding-left:1.5rem;padding-right:1.5rem;position:sticky;row-gap:1.5rem;top:140px}}.categoryAside-category{-moz-column-gap:.5rem;column-gap:.5rem;cursor:pointer;display:flex;justify-content:space-between;padding:.25rem;transition-duration:.1s}.categoryAside-category:hover{--tw-border-opacity:1;border-color:rgb(52 58 64/var(--tw-border-opacity));border-width:1px;transition-timing-function:cubic-bezier(.4,0,1,1)}@media (min-width:900px){.categoryAside-category{-moz-column-gap:0;column-gap:0;font-size:.875rem;line-height:1.25rem;padding:.5rem}}.introAside-container{--tw-border-opacity:1;--tw-drop-shadow:drop-shadow(0 1px 1px rgba(0,0,0,.05));align-items:center;align-self:flex-start;border-color:rgb(52 58 64/var(--tw-border-opacity));border-width:1px;filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);justify-content:center;padding:1rem;position:sticky;row-gap:1.5rem;top:153px}.introAside-container,.postHeader-container{display:flex;flex-direction:column;width:100%}.postHeader-container{--tw-border-opacity:1;border-bottom-color:rgb(52 58 64/var(--tw-border-opacity));border-bottom-width:1px;margin-bottom:1rem;padding:1rem .75rem}.postHeader-container h3{font-size:2.25rem;line-height:2.5rem;margin-bottom:.75rem}.postHeader-title{font-size:1.5rem;line-height:2rem;margin-bottom:.25rem}@media (min-width:900px){.postHeader-title{margin-bottom:.5rem}}.postHeader-dateNcagtegory{--tw-text-opacity:1;color:rgb(73 80 87/var(--tw-text-opacity));font-size:.875rem;font-weight:400;line-height:1.25rem}.postPage-container{align-items:flex-start;display:flex;padding-left:.75rem;padding-right:.75rem;width:100%}@media (min-width:900px){.postPage-container{-moz-column-gap:1.5rem;column-gap:1.5rem;justify-content:space-between}}.postPage-html{margin-bottom:.75rem;width:100%}.postPage-toc-container{display:none;padding-left:.5rem;padding-right:.5rem;position:sticky;top:153px}@media (min-width:900px){.postPage-toc-container{display:flex;flex-basis:20%;flex-direction:column;row-gap:.25rem}}.postPage-toc{width:100%}.postPage-toc a{--tw-text-opacity:1;color:rgb(134 142 150/var(--tw-text-opacity));cursor:pointer;font-size:.75rem;line-height:1rem}.postPage-toc a:hover{--tw-text-opacity:1;color:rgb(92 124 250/var(--tw-text-opacity));transition-duration:.1s}.postPage-content{display:flex;flex-direction:column}@media (min-width:900px){.postPage-content{flex-basis:80%}}.postNav-container{--tw-border-opacity:1;align-items:flex-start;border-top-color:rgb(233 236 239/var(--tw-border-opacity));border-top-width:1px;margin-bottom:1rem;margin-top:1rem;padding:1rem .75rem}.postNav-card-container,.postNav-container{display:flex;flex-direction:column;width:100%}.postNav-card-container{row-gap:1rem}@media (min-width:540px){.postNav-card-container{-moz-column-gap:1rem;column-gap:1rem;flex-direction:row}}.postNav-card{--tw-border-opacity:1;align-items:center;border-color:rgb(233 236 239/var(--tw-border-opacity));border-width:1px;-moz-column-gap:.75rem;column-gap:.75rem;display:flex;padding:.5rem;width:100%}.postNav-icon{--tw-bg-opacity:1;background-color:rgb(231 245 255/var(--tw-bg-opacity));border-radius:.125rem;font-size:1.5rem;line-height:2rem;padding:.5rem .75rem}@media (min-width:900px){.postNav-icon{font-size:2.25rem;line-height:2.5rem}}.postNav-info-container{align-items:flex-start;display:flex;flex-direction:column;row-gap:.25rem}.postNav-title{--tw-text-opacity:1;-webkit-box-orient:vertical;-webkit-line-clamp:1;color:rgb(52 58 64/var(--tw-text-opacity));display:-webkit-box;font-size:.875rem;line-height:1.25rem;overflow:hidden}@media (min-width:540px){.postNav-title{font-size:1.125rem;line-height:1.75rem}}@media (min-width:900px){.postNav-title{font-size:1.25rem;line-height:1.75rem}}.postNav-date{--tw-text-opacity:1;color:rgb(173 181 189/var(--tw-text-opacity));font-size:.875rem;line-height:1.25rem}.postPage-html h1{font-size:1.875rem;font-weight:500;line-height:2.25rem;margin-bottom:6px}.postPage-html h2{font-size:1.25rem}.postPage-html h2,.postPage-html h3{font-weight:500;line-height:1.75rem;margin-bottom:.5rem}.postPage-html h3,.postPage-html h4{--tw-text-opacity:1;color:rgb(52 58 64/var(--tw-text-opacity));font-size:1.125rem}.postPage-html h4{font-weight:500;line-height:1.75rem;margin-bottom:.5rem}.postPage-html p{color:rgb(52 58 64/var(--tw-text-opacity));line-height:1.625;margin-bottom:.5rem;margin-top:.5rem}.postPage-html a,.postPage-html p{--tw-text-opacity:1;font-size:.9rem}.postPage-html a{color:rgb(51 154 240/var(--tw-text-opacity));text-decoration-line:underline;text-underline-offset:4px}.postPage-html img{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);--tw-shadow-color:#343a40;--tw-shadow:var(--tw-shadow-colored);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);height:100%;width:100%}.postPage-html code{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(250 176 5/var(--tw-bg-opacity));border-radius:.125rem;color:rgb(255 255 255/var(--tw-text-opacity));font-size:.875rem;font-weight:400;line-height:1.25rem;margin-right:2px;padding:2px .25rem}.postPage-html blockquote{--tw-border-opacity:1;--tw-text-opacity:1;border-left-color:rgb(222 226 230/var(--tw-border-opacity));border-left-width:4px;color:rgb(206 212 218/var(--tw-text-opacity))}.postPage-html blockquote p{--tw-text-opacity:1;color:rgb(134 142 150/var(--tw-text-opacity));font-weight:400;padding-left:.5rem}.postPage-html ul{--tw-text-opacity:1;color:rgb(52 58 64/var(--tw-text-opacity));font-size:.9rem;list-style-position:outside;list-style-type:disc;padding-left:.75rem}.postPage-html iframe{height:315px;width:100%}@media (min-width:540px){.postPage-html iframe{height:450px}}.mx-auto{margin-left:auto;margin-right:auto}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.block{display:block}.flex{display:flex}.hidden{display:none}.max-h-14{max-height:3.5rem}.min-h-\[600px\]{min-height:600px}.w-full{width:100%}.max-w-5xl{max-width:64rem}.max-w-\[200px\]{max-width:200px}.max-w-\[240px\]{max-width:240px}.max-w-\[3\.5rem\]{max-width:3.5rem}.max-w-\[60px\]{max-width:60px}.cursor-pointer{cursor:pointer}.flex-row-reverse{flex-direction:row-reverse}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-y-2{row-gap:.5rem}.gap-y-4{row-gap:1rem}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-\[\#343a40\]{--tw-border-opacity:1;border-color:rgb(52 58 64/var(--tw-border-opacity))}.p-2{padding:.5rem}.p-3{padding:.75rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-1{padding-top:.25rem}.pb-1,.py-1{padding-bottom:.25rem}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-\[20px\]{font-size:20px}.text-\[8px\]{font-size:8px}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.text-\[\#212529\]{--tw-text-opacity:1;color:rgb(33 37 41/var(--tw-text-opacity))}.text-\[\#343a40\]{--tw-text-opacity:1;color:rgb(52 58 64/var(--tw-text-opacity))}.text-\[\#495057\]{--tw-text-opacity:1;color:rgb(73 80 87/var(--tw-text-opacity))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter-none{filter:none}@media (min-width:540px){.sm\:min-h-\[950px\]{min-height:950px}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:900px){.md\:mt-5{margin-top:1.25rem}.md\:block{display:block}.md\:min-h-\[950px\]{min-height:950px}.md\:w-3\/5{width:60%}.md\:w-\[50\%\]{width:50%}.md\:basis-1\/3{flex-basis:33.333333%}.md\:basis-2\/3{flex-basis:66.666667%}.md\:flex-row{flex-direction:row}.md\:flex-col{flex-direction:column}.md\:gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.md\:gap-y-0{row-gap:0}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:font-semibold{font-weight:600}}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"/><link rel="icon" href="/favicon-32x32.png?v=da79f854ca39948450f966147942d806" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=da79f854ca39948450f966147942d806"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=da79f854ca39948450f966147942d806"/><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="block"><header class="header" id="header"><nav class="nav-container" id="header-container"><a id="blog-title" class="cursor-pointer" href="/"><img src="../../hk-blog-icon.png" alt="blog-logo" class="max-h-14 w-full max-w-[3.5rem]"/></a><div class="flex justify-between cursor-pointer items-center"><a class="hover-text-gray px-2 py-1" href="/hankyeolk/">누구세요?</a></div></nav></header><section class="container mx-auto max-w-5xl flex flex-col items-center font-sans min-h-[600px] md:min-h-[950px]"><header class="postHeader-container"><h3>🦄</h3><p class="postHeader-title">노션으로 2022년 대시보드 만들기</p><p class="postHeader-dateNcagtegory">2022-01-21<!-- -->   |   <!-- -->노션</p></header><section class="postPage-container"><div class="postPage-content"><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F86cb3690-ad87-40f3-9272-a615d7c3bdbe%2Fetc.png?table=block&amp;id=428e70d9-14c2-483b-8b4c-fc1016dfbc09&amp;spaceId=8b0941ab-7438-4d26-bc5a-baa5da72052c&amp;width=1900&amp;userId=58220135-364e-4669-99a8-fa4af12740ae&amp;cache=v2" alt="post-img" class="w-full mb-5"/><div class="postPage-html"><p>2022년 시작부터 나는 휴직을 결심했다. 일과 내 삶이 너무 붙어있었다. 그 둘을 떨어뜨리지 않으면 둘 중 하나는 크게 다칠 것 같다는 판단이 강하게 내려졌다. 2021년 하반기 동료 리뷰에 담긴 주요 키워드도 역시 **‘분리’**였다. 그래서 1월의 첫 주, 나는 휴직모드로 들어갔다.</p>
+<p>첫 하루 이틀은 ‘쉬는 것이 무엇인지’를 몸 자체에 이해시키는 것에 집중했다. 2021년에는 ‘쉰다’는 키워드가 내 삶에 전혀 없었기에, ‘쉼’에 대한 정의가 무엇보다 중요했다. 그래서 나는 내 삶을 정리하고, 정리된 삶에서 앞으로 어떻게 살아야 할지를 고민해야 했다.</p>
+<p><strong>가장 편하게 열어볼 수 있고, 이미 잘 쓰고 있으면서, 정리나 기록하고 나면 간지가 나는 플랫폼</strong>이 필요했다. 직접 개발을 해볼까 싶기도 했지만, 노션의 앱 아이콘을 보자마자 ‘굳이?’ 라는 생각이 커졌다. 그래서 노션으로 삶 관리체계를 만드는게 정해졌다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 48px" > </p>
+<p>노션으로 대시보드를 만들기로 결심하고 검색을 정말 많이했다. (아마 ‘notion dashboard’라는 키워드로 검색했던 것 같다.) <code>reddit</code>에서 다양한 형태로 나름의 대시보드를 구축한 예시를 찾기 좋았다.</p>
+<p>그중에서 Red 라고 하는 이름으로 노션 전문 유튜브와 노션 블로그를 운영하면서, 노션 템플릿을 무료로 제공해주는 유저를 마주하게 되었다. 그녀의 <a href="https://youtu.be/gwU0Sh-M0L4">Tour of My 2022 Notion Dashboard</a> 영상을 보면서 많은 부분을 참고했다.</p>
+<p>나는 노션 대시보드를 통해서 ‘온전한 나의 삶’을 꾸준하게 기록하는 목적을 달성하고 싶고, 이 글을 적는 지금도 내가 구축한 대시보드에 만족감을 크게 느끼고 있다. 아래에서는 대시보드에서 내가 설명하고 싶은 항목별로 어떤 특징을 가지고 있는지 간단하게 설명하고자 한다.</p>
+<hr>
+<p style="display: block; margin-top: 0px; margin-bottom: 60px" > </p>
+<h3 id="일상-루틴-관리">일상 루틴 관리</h3>
+<p>가장 먼저 하루를 주 단위로 가볍게 관리하고 싶었다. 그래서 하루 중에 반드시 진행해야 하는 루틴(=습관) 트래킹 데이터베이스를 만들었다. 한 주를 살아보면서, 내가 반복적으로 수행하는 일이 있다면 습관 항목으로 만들어서 꾸준하게 관리할 수 있게 만드는 것이 이 데이터베이스의 핵심이다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>가장 먼저 2022년의 전체 일정을 테이블에 반영했다.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 104.6875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAABrUlEQVR42p2U6W6DMBCE+/7P10Pt/6it1PjAxthrzFS7YI4EaFRLqyDHfMzs4afL5YKXl2d8fLxLvL29YhgGPLL43G08aa1hjAFlmg+VUubf9fP4Utns3wGttYixQ9/36EIrmzkTui4gpQQifu4kYowS/D9R2geyOuccckpojZpVeu9FBa8RtgCP7E6WFWxjkRPBayuHGcQfYdW8QgiiuCoFhmPL1+sPGgbmhLY1M5AVVuC9wjGXB8ArjDWgFOEnyyPQrYBhA61nDnPICikmeG12gaPlCSiWT4BWgI1ULYRmPtyeWsaxZVbIRWHLwS0K3QTkQ7fApS/XMe6tgAneWE43htLj20dQX1jKIXAvRqC1yGzZMVAk4qsCMfzDsrVzDivw0y3ApShRwKdF0UqBm5tihNfTpJQC5TzyXpX/AnJjC1ByaFZV3vbhbWOXI8tKFGoQxZNJCdJ/DwFN7cMU0Rr94Cyf5VCr6bYhtKY5meX42CxzUURh3k5KHb2xscMGut/YUx8qdZ0th0ZL20hR2r8nZbexrTViLxMhNE6A/ALnrVquML7BOY4uV7b8C+cvcA4hlG3TAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/c5c47fca2e91fcf6813bf61dc9815492/2bef9/weekTracking.png"
+        srcset="/static/c5c47fca2e91fcf6813bf61dc9815492/6f3f2/weekTracking.png 256w,
+/static/c5c47fca2e91fcf6813bf61dc9815492/01e7c/weekTracking.png 512w,
+/static/c5c47fca2e91fcf6813bf61dc9815492/2bef9/weekTracking.png 1024w,
+/static/c5c47fca2e91fcf6813bf61dc9815492/71c1d/weekTracking.png 1536w,
+/static/c5c47fca2e91fcf6813bf61dc9815492/a878e/weekTracking.png 2048w,
+/static/c5c47fca2e91fcf6813bf61dc9815492/9d53e/weekTracking.png 2542w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>월 ~ 일요일로 구성된 한 주만 체크해주는 Formula 속성을 작성했다. (내 생각에 Formula는 노션의 가장 큰 강점 중 하나다.)</p>
+<deckgo-highlight-code language="markdown" terminal="carbon" theme="one-light"  >
+          <code slot="code">formatDate(prop(&quot;날짜&quot;), &quot;W&quot;) == formatDate(now(), &quot;W&quot;)</code>
+        </deckgo-highlight-code>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>매일의 감정을 기록하고, 습관을 체크하며, 한 줄 일기를 작성하는 습관을 만들고 싶었다. (나에 대해서 솔직하게 기록하고 싶었다.) 그래서 각 관리 항목을 속성으로 만들었다.</p>
+<ul>
+<li>매일의 감정 - <code>Select 속성</code> / 기록하는 순간에 든 감정을 바로 선택할 수 있게 선택지를 미리 만들어뒀다.</li>
+<li>습관들 - <code>Checkbox 속성</code> / 루틴이기 때문에 했다 or 안했다 만 관리할 수 있으면 된다고 생각하여 체크박스를 활용했다. 데이터베이스가 길어지는 것은 싫어서 이모지만 반영했다.</li>
+<li>한 줄 일기 - <code>Text 속성</code> / 말 그대로 하루에 가장 남기고 싶은 한 줄을 적고있다.</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+</li>
+<li>
+<p>대시보드 메인 페이지에서 ‘한 주’ 단위로만 보여지는 연결 데이터베이스(linked database)를 반영했다. 데이터베이스 필터에서 Formula로 설정한 값이 true 인 데이터만 불러오게 설정하면 된다.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40.23437500000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABRklEQVR42lWSWW6DQBAFuf8pIuVOzk+kxE6EBcy+ALPxkm5sbLeEgBFdXTOPTimJy+WMvu9xPn/jeu1RSsY8R5RSQNVa42trDW4tmNeEGCNKzggp4+0k8P4hAWzorLUIwSOlxABqdNaB1o0xGIYBy7IweNs2htI3tdZjUK4NSy5Y13UHKqVApgSlckLAGo05BjhroLXixpITxpgRctvNtw3PRf2dcw5KSggheAKV1QPsvGCKCXpOD/takHJBLoUNy+1+N2ZDMpumEVI+gGr4hRIjjA8w1sH7AO8svgYJ7RyCdyAR7z0fC8nQMx0NG2qtGZjSDjSDwOLDIxDaWqs4TQGxNDpMXr9vk/rv1dELTXg2nPSE9QbndDmMik8ZsdRXYM4Z3rsjNDakYJyzRyhGjFiCfzEk4I+dsbJhOwbRLxZj2If+A/8Acels9mtUZRYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/538921a9a37aea3002d8a48bb33440e6/2bef9/thisWeek.png"
+        srcset="/static/538921a9a37aea3002d8a48bb33440e6/6f3f2/thisWeek.png 256w,
+/static/538921a9a37aea3002d8a48bb33440e6/01e7c/thisWeek.png 512w,
+/static/538921a9a37aea3002d8a48bb33440e6/2bef9/thisWeek.png 1024w,
+/static/538921a9a37aea3002d8a48bb33440e6/bb543/thisWeek.png 1418w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 32px" > </p>
+<p>주간 트래킹 데이터베이스는 하루를 시작할 때, 특정 습관적인 행동을 했을때, 그리고 자기 직전에만 관리하고 있다. 하루를 아주 간단하게 파악할 수 있어서 편하게 사용중이다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 72px" > </p>
+<h4 id="2022년-목표-관리">2022년 목표 관리</h4>
+<p>하루와 한 주간의 루틴 트래킹으로 ‘소소한 달성’을 이루어 낸다면, 2022년 목표 관리 데이터베이스는 ‘체계적인 달성’을 이루고 싶어서 만들게 되었다.</p>
+<p>2021년에는 ‘아 이것도 하고 싶은데’라던지 ‘아 이것도 해야 하는데’와 같은 <strong>생각으로만 머문 목표</strong>가 제법 있었다. <strong>2022년은 생각으로만 머무는 목표를 만들고 싶지 않아서</strong>, 나만의 목표를 관리할 수 있는 체계를 만든 것도 있다. (개인 OKRs 관리용으로도 사용할 수 있을 것 같다.)</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>목표 데이터베이스와 목표 달성을 위한 액션 데이터베이스를 각각 생성한다.</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>목표 데이터베이스의 핵심은 ‘연결된 액션의 달성 정도가 어떻게 되는지를 파악할 수 있는가?’ 였다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 24.609375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAApElEQVR42p1P0QqDMAzs///ZnJt79wumtGhtUo3VGwk4xhhj7OCgPe5yiWvbFrfmirqucK5OaJoLFPu+/0VHRBiGASkl6JuZ8Qs0/ElzRAnzPD/FUgpUW0UwTREiAk6TUVbBOI5Wqj5mQmbGsiyWUc3pdiocjTqcUsK2bQgh2D/7Hjl4rKUgeI+cs/mtjBl936Hr7pZ3r+se/HbSu1+hl8QYbeADm2SGucKz/UUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/2bef9/target.png"
+        srcset="/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/6f3f2/target.png 256w,
+/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/01e7c/target.png 512w,
+/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/2bef9/target.png 1024w,
+/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/71c1d/target.png 1536w,
+/static/72ceb7dd1f13ebbf7d3fc7d850ed3982/09b15/target.png 1704w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>
+<p>‘목표 달성 정도’라고 하는 <a href="https://www.notion.so/help/relations-and-rollups">Rollup</a> 속성을 하나 만들었다. 목표에 연결된 액션 중에서 ‘완료’ 처리가 된 액션의 비율을 보여 줄 수 있게 설정했다. 정말 쉽다!
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 410px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 149.609375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC+UlEQVR42o1ViW7aQBD1//9QFamKWrUkNA0FcpGShMMGgznMYYPBgF/1hoxjjO10pZH3mH078+awsd/vsdvtRDgPwzCe65nuHQ77E73jfhifb7dbGHgf8/kMnueh17PQ6bQxchy02y0MhwNYpolut4PD4YAoAqIoguMM4bouup0OXl6asPt92HYfBg+peLToaGkQrLHZBPB9H9vtBpvNBkEQyMPUpY7OeaY6XBuqwO/RgoNYQOHgGcHDcCsPKA3j8VhA5vM5PG8pcxpk6EsKoEPXdLlSuUWj8YRf5Wtxk5y1W29wHAel0g98/3Yp9NCzM0C1LrlW6znUwsm7hVyTDlrHUQiYtloHgdqtFiaTMa6vSrgq/USr9YaZ62YDpl1PW8xUcd0pVr6P9XotQIvF/CNtiiw8lXfAMESn3cZyucTDwz1eX5oSJKadpI2my//KauULoDMcotn8i2r1D0yzKwEzGDGmBck9gu/jICQrQoVuyZ0gkK96qPcNKpBkHk6nU6xWK+GDr3GexWuaY+rxvgCSVG4QVMtpNpthNHKEk7wAJQNFPd4XQN/3hFw90LziQywpPkbhfl5aLRYL4ZX8ioVas7VaVaJVLl/h4uIL7u5qeH5u4PLyq9CQBOTgXfK3XHpiROwyAZPVQPO5rzVOZT3LKk96eAKoLucldroEk8L9M0Byx0NGXBulNs2Ilw5RYcKfAJJwuswNdgzLMqVO2WjHo1Gmq5+6nE6PostZjePMQoIyByu3v6WN39yU8fhwLx2Ec30wDaZd+gyQws7L/wa7r9ntYjCwJcH7vV7c8tMB03IrjHKRy1lJnQuYV6956ZKUzCgzVcgfGwTb+2QyQb/fy+UvOTKjzIXWMEXneRVSGOVkpPUBb3n8Nc5mrgSMXYhfevPxK9hlJ7bUs+ehXq/iufGEer2GRuNRon5/V0e9VhWpVisSfR3aYGlADMgJ2w8P0x1aSzC9xzsUekDh/bgf0mxu2LYNy7RgmuanYllWLIPBQFxW9/8BeA8YK2GAdPEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/005d8a99f168b11661783c3ba44f2f2c/d68e4/rollups.png"
+        srcset="/static/005d8a99f168b11661783c3ba44f2f2c/6f3f2/rollups.png 256w,
+/static/005d8a99f168b11661783c3ba44f2f2c/d68e4/rollups.png 410w"
+        sizes="(max-width: 410px) 100vw, 410px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+</li>
+<li>
+<p>목표 데이터베이스의 시작일을 등록하고 <code>1 months</code> 형식으로 예상 소요 기간을 입력하면 예상 종료일을 계산해주는 Formula 속성도 반영해두었다. (정확한 영어만 입력해야 해서 쓸모가 크진 않다.)</p>
+<deckgo-highlight-code language="markdown" terminal="carbon" theme="one-light"  >
+          <code slot="code">dateAdd(prop(&quot;시작일&quot;), toNumber(replace(prop(&quot;예상 소요 기간&quot;),
+&quot;[A-z]&quot;, &quot;&quot;)), replaceAll(prop(&quot;예상 소요 기간&quot;), &quot;[ 0-9]&quot;, &quot;&quot;))</code>
+        </deckgo-highlight-code>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>목표 달성을 위한 액션 데이터베이스는 위에서 만든 목표 데이터베이스와 ‘연결(=relations)’ 되는 것이 핵심이다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.265625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAsUlEQVR42mWO4W7CMAyE+/7vNrHBIIX/0CxUhITGgTbpNzWIgsDSyT5bd77KGMN6/UutNux2NavVD4vFF8vlN9ttjVIbxnHkXo9O2X0CKucc3ntyzqSUCqb5FQ9Bzk/xe5XdmO+GIoEYBRGZBZPx2VqGYSiCob8RgyvcWltChBDouo4oQsqZk9yojPnDO8dkfL3G+Vvf92jdzIZp4kpxOR7RWnPY78u9aQ60bVsCWH/hH9DNNNjuOoL9AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/8dfe3a5372252d3dca8059434494e748/2bef9/action.png"
+        srcset="/static/8dfe3a5372252d3dca8059434494e748/6f3f2/action.png 256w,
+/static/8dfe3a5372252d3dca8059434494e748/01e7c/action.png 512w,
+/static/8dfe3a5372252d3dca8059434494e748/2bef9/action.png 1024w,
+/static/8dfe3a5372252d3dca8059434494e748/71c1d/action.png 1536w,
+/static/8dfe3a5372252d3dca8059434494e748/efb68/action.png 2032w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>완성된 목표 관리 데이터베이스를 대시보드 메인 페이지에 뽑아와서 갤러리 뷰로 보여지게 만들었다. 대시보드에서는 최대한 편하게 관리하는 것이 좋다고 생각해서 목표의 예상 마감일, 목표 현재 달성도만 보여지게 만들었다.</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 32px" > </p>
+<p>목표, 액션 관리 데이터베이스를 구축으로 1주 ~ 1년 정도의 서로 다른 기간에 내가 달성해야 하는 목표의 체계성을 갖췄다는 사실이 가장 뿌듯하다.</p>
+<p><em>이 글을 작성하는 것도 특정 목표의 달성을 위한 세부 액션이었다. 글을 다 작성하면 액션 하나를 완료처리 할 수 있어 너무 기쁘다.</em></p>
+<p style="display: block; margin-top: 0px; margin-bottom: 72px" > </p>
+<h4 id="글-작성과-카테고리별-모아보기">글 작성과 카테고리별 모아보기</h4>
+<p>2022년에 가장 만들고 싶은 습관은 ‘꾸준한 글쓰기’다. 그래서 노션 대시보드 내부에 들어갈 항목을 정하면서 가장 먼저 그린 체계 역시 ‘글 적고 관리하기’ 였다.</p>
+<p>노션 데이터베이스에는 <a href="https://www.notion.so/help/boards">Board View</a>라고 하는 칸반 형식의 멋진 태스크 관리 View가 있다. 글 작성 상태에 따라서 글을 편하게 옮겨다니며 관리할 수 있다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 26.953125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAjElEQVR42m2QAQrDIAxFvf/xhmU9wyirxS2NMZphoE6twichhpefGHccsq5PsfahcVmsyjkn5eWcVW3e1sa6we9HEEBSSlWRTkmJu0ZiugEJSZi5IP9A2N9CAN00717CMdSmMsSD19g62jcnAYMCy58CZ7Zj5M7xCLpyxPPWZ8Y1Zjea3a8ohFCdXQ5/F+yJStPpxjUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/036815cce4e18f7fb5c5f2c62484758e/2bef9/post.png"
+        srcset="/static/036815cce4e18f7fb5c5f2c62484758e/6f3f2/post.png 256w,
+/static/036815cce4e18f7fb5c5f2c62484758e/01e7c/post.png 512w,
+/static/036815cce4e18f7fb5c5f2c62484758e/2bef9/post.png 1024w,
+/static/036815cce4e18f7fb5c5f2c62484758e/71c1d/post.png 1536w,
+/static/036815cce4e18f7fb5c5f2c62484758e/3dfa7/post.png 2028w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>글 카테고리 - 카테고리 데이터베이스와 relation을 가지는 속성이다. 글 카테고리별로 편하게 모아보기 위해서 카테고리 데이터베이스를 구분했다.</li>
+<li>발행? - 누군가에게 보여주고 싶은 글 vs 나만 볼 수 있는 글을 구분하고 싶었다. 그래서 발행? 속성이 true 인 값만 카테고리별로 모아보는 뷰에서 보여지게 세팅했다.</li>
+<li>독후감? - 아래에서 설명할 독서 관리 데이터베이스와 relation을 가지는 속성이다. 책을 읽는 것에서 그치지 않고 다음에 쉽게 돌아볼 수 있게 기록하는 목적을 가진다.</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 32px" > </p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 766px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.8125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA/UlEQVR42p1R2W6DMBD0//9cm6siTSAqYGMDhggeGs6pZiNXtOpTLa3HsmdndtfK2gJZluJ2S6C1RlWViOOr3Blj0LaNoPc1jNEojEHTeKzrCi7iNtT5HCGK3nA8HrDfv+Jyecdu94LT6YAkvqIoDJIkhnNWkMYUHcfxb0H8czF5nmcsy/IjFN3S9APWWvR9J0Q+BGQMw4CqqqT1PM+k2sfj81t4a6Ccc3DWSkLXddLKNE0iQqQg7zjfuq7FmHOmOQUCd56fXPUkFfB1jbJ0kui9l9mxmr7vxf1+b8WUYvwgrXPJ4wcxh1yKK24h6EDXMJtpGqW6UMkWf59DZ18dyBlNLTvTggAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/794ef8a36f42b5701b95fbac802f5d5f/f7616/postCategoryView.png"
+        srcset="/static/794ef8a36f42b5701b95fbac802f5d5f/6f3f2/postCategoryView.png 256w,
+/static/794ef8a36f42b5701b95fbac802f5d5f/01e7c/postCategoryView.png 512w,
+/static/794ef8a36f42b5701b95fbac802f5d5f/f7616/postCategoryView.png 766w"
+        sizes="(max-width: 766px) 100vw, 766px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p style="display: block; margin-top: 0px; margin-bottom: 12px;" > </p>
+<p>작성된/중인 글마다 부여된 카테고리별로 모아 볼 수 있는 카테고리 데이터베이스를 따로 만들었다. 카테고리별로 몇 개의 글이 있는지를 보여주는 Formula도 가볍게 작성했다.</p>
+<deckgo-highlight-code language="markdown" terminal="carbon" theme="one-light"  >
+          <code slot="code">&quot;총 &quot; + format(length(replaceAll(prop(&quot;글&quot;), &quot;[^,]&quot;, &quot;&quot;)) + 1) +
+&quot; 개의 글이 &quot; + prop(&quot;카테고리&quot;) + &quot; 안에 있습니다.&quot;</code>
+        </deckgo-highlight-code>
+<p style="display: block; margin-top: 0px; margin-bottom: 72px" > </p>
+<h4 id="독서-관리">독서 관리</h4>
+<p>많은 사람들이 연초에 ‘올해는 n권의 책을 읽는다’ 라는 3일 유효기간도 가지 않는 (보통은..) 계획을 세운다. 나 역시 매년 초에 그랬고, 대부분은 소소한 달성조차도 못했던 것 같다. 독서라는 목표는 ‘미루기’라는 괴랄한 성질을 잘 이겨내야 하기 때문이다.</p>
+<p>그래서 2022년에는 독서 자체를 대시보드로 관리해야겠다 싶었다. ‘n권을 읽자!’라는 뭉실한 목표가 아니라, ‘한 권이라도 관리해서 읽자’였다. 독서 관리 데이터베이스는 글 작성 데이터베이스와 연결성을 가진다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30.859375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAo0lEQVR42qVQSQ6DMAzk/y/iH5RjOZWlUqFIhNhZp4pRLXotjkbxEs+MUrVti7quEWNEzvkyqml6omluOMclwr5/oKDr7hiGXgf/hBCO44CCeX5hWRYYsyF4L18QQlDEGGTByywgpaRvyl1qIWTmHxVPFrxvSCmDicBMIlZEjTFY1zestQIiUkEldM5J8W1452DtjlxOTieHUZ0c+dE/XDsl/ACQedYzOTcPogAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/04ad32ffb1ce9314c57118057e487cd5/2bef9/book.png"
+        srcset="/static/04ad32ffb1ce9314c57118057e487cd5/6f3f2/book.png 256w,
+/static/04ad32ffb1ce9314c57118057e487cd5/01e7c/book.png 512w,
+/static/04ad32ffb1ce9314c57118057e487cd5/2bef9/book.png 1024w,
+/static/04ad32ffb1ce9314c57118057e487cd5/71c1d/book.png 1536w,
+/static/04ad32ffb1ce9314c57118057e487cd5/a878e/book.png 2048w,
+/static/04ad32ffb1ce9314c57118057e487cd5/f6b04/book.png 2658w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>전체 페이지 대비 현재 내가 읽은 페이지를 계산해서 Progress를 나타낼 수 있는 Formula를 반영했다. 다른 Formula와 다르게 시각적으로 볼 수 있는 장치를 넣고 싶었다.</p>
+<deckgo-highlight-code language="markdown" terminal="carbon" theme="one-light"  >
+          <code slot="code">if(not empty(prop(&quot;총 페이지&quot;)) and not empty(prop(&quot;현재 페이지&quot;)),
+slice(&quot;❒❒❒❒❒❒❒❒❒❒&quot;, 0,floor(10 _ prop(&quot;현재 페이지&quot;) / prop(&quot;총 페이지&quot;))) + &quot; ■ &quot; +
+slice(&quot;❒❒❒❒❒❒❒❒❒❒&quot;, 0, 10 - floor(10 _ prop(&quot;현재 페이지&quot;) / prop(&quot;총 페이지&quot;))) + &quot; &quot; +
+format(floor(100 \* prop(&quot;현재 페이지&quot;) / prop(&quot;총 페이지&quot;))) + &quot;%&quot;, &quot;&quot;)</code>
+        </deckgo-highlight-code>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>읽기 시작한 날과 다 읽은 날을 기록하여, 특정 카테고리의 책에 대한 완독 기간이 어떻게 되는지 계산해주는 Formula도 반영했다. 기간을 기록할 수 있으면, 그 기간동안 독서를 방해한, 독서를 촉진시킨 요소가 무엇인지 돌아볼 수 있겠다 싶었다.</p>
+<deckgo-highlight-code language="markdown" terminal="carbon" theme="one-light"  >
+          <code slot="code">format(if(not empty(prop(&quot;다 읽은 날&quot;)), dateBetween(prop(&quot;다 읽은 날&quot;),
+prop(&quot;읽기 시작한 날&quot;), &quot;days&quot;), toNumber(&quot;&quot;)) + 1) + &quot; 일&quot;</code>
+        </deckgo-highlight-code>
+</li>
+</ul>
+<p style="display: block; margin-top: 0px; margin-bottom: 24px" > </p>
+<ul>
+<li>
+<p>템플릿에는 없지만, 현재 내가 사용하고 있는 대시보드에는 Book Mark를 추가하는 템플릿 버튼을 넣어뒀다. 나는 독서를 하면서 기억하고 싶은 문장, 문단을 필사하는 습관이 있다. 메모장에만 남겨두기는 좀 그런 거 같고, 독후감을 적을때 북마크를 넣으면 간지날 것 같아서 만들어뒀다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABKElEQVR42q2SCW7CMBBFffweqleoqh4AiiiQ2s5mOzZeYn41DkQIFQptR3oaK7H/LPrMWgtHOFegOBwOd4FTPgsmBEddSwghIKUEFbhXdMyT2Jt0eHrheBUWLKWEcRyRUgSdc85z5Z/Ix+52Q8DzWmNrAhiNGWOcuyLxyzFuxeVNVlVbCF5BSo62qTEMGt47pBgQoy/5Gqf/lH3wGMcEVksOoqkF+r5Fih4h7BG8e4DpfhGkEf8raFWs71pYOxQm+0w2mr+5M1tZi5xpx/kqTIhPaN3BDhrGKGjd38R8x/FdjAFss1ljsVxgtVqCxJXqyi4fpesahODBOK/Aq3c0dQXVtxiMgjFT1Xspb+YOP1ZQ7Q7BG+ydgbP6l6hiIeb3FsEfrfJHyDZf19jy82Pc+McAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/7cfe9cb530c5701b5a62c1c643b3933b/2bef9/bookMark.png"
+        srcset="/static/7cfe9cb530c5701b5a62c1c643b3933b/6f3f2/bookMark.png 256w,
+/static/7cfe9cb530c5701b5a62c1c643b3933b/01e7c/bookMark.png 512w,
+/static/7cfe9cb530c5701b5a62c1c643b3933b/2bef9/bookMark.png 1024w,
+/static/7cfe9cb530c5701b5a62c1c643b3933b/01a87/bookMark.png 1288w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</li>
+</ul>
+<hr>
+<p style="display: block; margin-top: 0px; margin-bottom: 72px" > </p>
+<p>대시보드 전체를 구상하고, 각각의 데이터베이스를 만들고, 메인 페이지에서 모아내는 작업은 하루를 꼬박 소모하게 만들었다. 휴직 기간 첫 주, 내 가슴을 뛰게 만든 첫번째 일이었다. 다시 일하러 가고 싶게 만들거나, 내 정신을 힘들게 만드는 그런 뜀박질이 아니었다.</p>
+<p>현재 내가 사용하고 있는 대시보드의 모습은 아래와 같다. 매일 아침에 눈을 뜨면 <strong>하루를 위한 계획을 짜고, 루틴을 체크하고, 책 내용을 기록하며 마지막으로 하루의 한 줄을 남기고 마무리</strong>한다. 이 과정을 만든 것이 나에게는 너무 소중하고 지금의 상황을 극복하는데에 많은 도움을 주리라 믿고 있다.</p>
+<p style="display: block; margin-top: 0px; margin-bottom: 32px" > </p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.078125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACAElEQVR42m2STWsTURSG53e4E0Wh2miLFMWVf0BxqaCbuu6qoGhwrSCVYIu2frQhialY0W60m3aR0BbcWknF0JJqIzZpvjrJnblz731kJp+NPfByzxzueXjPmWvdGb3N2YGTDA8NEBo8zcWR84xcCBEaPMXw0BlOHD9GOPwA9leQ2SeY/CvM7gvM7jRm5zn693RQ078mMfUs1qfFj0SePSWeiBGNzRF7GyOejAdnIplgNvqG1Noa8mAT8XcZp7SKU0rjFFM4xTReZR1ZXkeWVtGygrWx8Y2XM1MUCns0ZJ2KXUXi0RvSSCpCUHUVVUdSdTxsR1Ore2joyADW9laWVDpF/k+eaqWMbdsIRyClxHXd4NRagdEYowL5uVIS+6CG1h5aeRjtYYzGsu06ym06qpTLlMr71J1G8G0CiGnl5pC00YemaNetr3NTZOcnqWUyNFyBkm7ngj/EfyDdBNm1MumlBVaWv5DZ/N7psd4/vM/4lUskZ2YCgOd5aN1t7sB0F+qHIxrsbP0gl9umUNzrAiP3xhi9fI4Ps6+Dog9siKZLx3FRyt+XCvbZdU5QM30j+2HlFh4THb/Jz6UErlIo36FSgbteqVat12Xv7joOPz+6S/jWdVKL75pPpPVnfflu27mvwFUfrB9qTUxEuHHtKvOJOEI0EEIcajoq2vCjHP4D2pohGZ+1afsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이미지"
+        title=""
+        src="/static/4521ea2128741cac4741ef747685e824/2bef9/dashboard.png"
+        srcset="/static/4521ea2128741cac4741ef747685e824/6f3f2/dashboard.png 256w,
+/static/4521ea2128741cac4741ef747685e824/01e7c/dashboard.png 512w,
+/static/4521ea2128741cac4741ef747685e824/2bef9/dashboard.png 1024w,
+/static/4521ea2128741cac4741ef747685e824/71c1d/dashboard.png 1536w,
+/static/4521ea2128741cac4741ef747685e824/a878e/dashboard.png 2048w,
+/static/4521ea2128741cac4741ef747685e824/aa02e/dashboard.png 4988w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p style="display: block; margin-top: 0px; margin-bottom: 32px" > </p>
+<p>내가 위에서 간략하게 기록한 각각의 데이터베이스가 포함된 노션 대시보드 템플릿을 만들었다. 이 글을 읽는 사람이 얼마나 될지는 모르겠지만 아래의 북마크(🥷)를 이용해서 편하게 개인 노션 계정에 복제해도 괜찮다.</p>
+<div style="text-align: center; width: 40%; height 50px; background-color: #343a40; border: none; border-radius: 5px; box-shadow: rgb(24 25 31 / 15%) 0 6px 35px; cursor: pointer; padding: 5px">
+  <a style="font-weight: bold; color: #fab005; text-decoration: none;  line-height: 50px" href="https://bit.ly/hk_templates_notion01" target="_blank">노션 대시보드 템플릿 훔쳐가기 🥷</a>
+</div>
+<p style="display: block; margin-top: 0px; margin-bottom: 60px" > </p></div><div class="w-full mt-3"></div></div><div class="postPage-toc-container"><p class="text-[#343a40] text-sm border-b pb-1">목차</p><div class="postPage-toc"><ul>
+<li>
+<p><a href="#%EC%9D%BC%EC%83%81-%EB%A3%A8%ED%8B%B4-%EA%B4%80%EB%A6%AC">일상 루틴 관리</a></p>
+<ul>
+<li><a href="#2022%EB%85%84-%EB%AA%A9%ED%91%9C-%EA%B4%80%EB%A6%AC">2022년 목표 관리</a></li>
+<li><a href="#%EA%B8%80-%EC%9E%91%EC%84%B1%EA%B3%BC-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%84-%EB%AA%A8%EC%95%84%EB%B3%B4%EA%B8%B0">글 작성과 카테고리별 모아보기</a></li>
+<li><a href="#%EB%8F%85%EC%84%9C-%EA%B4%80%EB%A6%AC">독서 관리</a></li>
+</ul>
+</li>
+</ul></div></div></section><section class="postNav-container"><p class="text-xl font-medium text-[#495057] mb-4">이어지는 글,</p><div class="postNav-card-container"><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2021-12-30/"><div class="postNav-icon">✍️</div><div class="postNav-info-container"><h3 class="postNav-title">2021년 회고. 코로나와 함께 춤을.</h3><p class="postNav-date">2021-12-30</p></div></a></div></div></section></section><footer class="footer" id="footer"><div class="footer-container"><p class="text-sm font-normal text-[#212529]">여기까지 스크롤을 내려주셔서 감사합니다 :-)</p><div class="footer-info-container"><p class="text-sm font-light text-[#343a40]">© 2023 hankyeolk</p><div class="footer-aboutMe"><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="LinkedIn"><a href="https://www.linkedin.com/in/hankyeolk/" target="_blank">LinkedIn</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="notion"><a href="https://bit.ly/notion-hk" target="_blank">notion</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Github"><a href="https://github.com/hankyeol-dev" target="_blank">Github</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Resume"><a href="https://bit.ly/notion-resume-hk" target="_blank">Resume</a></button></div></div></div></footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2022-01-21/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-09774c548f8740bf0a33.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-8ceb14c486efb85bb510.js\"],\"component---src-pages-hankyeolk-js\":[\"/component---src-pages-hankyeolk-js-279b500affeee9e5f62c.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d04e2d7a1d35c063abdd.js\"],\"component---src-templates-post-template-js\":[\"/component---src-templates-post-template-js-9835b066902cfaf062aa.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="57d0d76f791389eb49cc";</script><script src="/webpack-runtime-ff764d86274f879f17d0.js" async></script><script src="/framework-ba4d18565df4cfac6629.js" async></script><script src="/app-09774c548f8740bf0a33.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
