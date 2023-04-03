@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhankyeolk_dev_blog=self.webpackChunkhankyeolk_dev_blog||[]).push([[459],{5700:function(e,t,l){l.r(t);var a=l(7294),n=l(1754),u=l(2309);t.default=e=>{let{data:t}=e;const{name:l,enName:r}=t.site.siteMetadata.author;return a.createElement(u.Z,null,a.createElement(n.Z,{title:l}),a.createElement("h1",null,l),a.createElement("h1",null,r))}}}]);
-//# sourceMappingURL=component---src-pages-hankyeolk-js-279b500affeee9e5f62c.js.map
