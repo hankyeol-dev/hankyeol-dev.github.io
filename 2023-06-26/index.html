@@ -50,87 +50,42 @@
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-NMDH9DXJJG', options);
-  </script><link rel="preload" href="/fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="block font-nanum"><header class="header" id="header"><nav class="nav-container" id="header-container"><a id="blog-title" class="cursor-pointer" href="/"><img src="../../hk-blog-icon.png" alt="blog-logo" class="max-h-14 w-full max-w-[3.5rem]"/></a><div class="flex justify-between cursor-pointer items-center"><a class="hover-text-gray px-2 py-1" href="/hankyeolk/">누구세요?</a></div></nav></header><section class="container mx-auto max-w-5xl flex flex-col items-center font-sans min-h-[600px] md:min-h-[1024px] "><header class="postHeader-container"><h3>🤝</h3><p class="postHeader-title">신뢰라는 자산에 대해서</p><p class="postHeader-dateNcagtegory">2023-06-22<!-- -->   |   <!-- -->블로그</p></header><section class="postPage-container"><div class="postPage-content"><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F169dc6aa-7d4e-4a4e-9363-e7ec9143efed%2Fblog.png?table=block&amp;id=f33852d6-61be-4905-bd96-34932148ede3&amp;spaceId=8b0941ab-7438-4d26-bc5a-baa5da72052c&amp;width=1900&amp;userId=58220135-364e-4669-99a8-fa4af12740ae&amp;cache=v2" alt="post-img" class="w-full mb-5"/><div class="postPage-html"><h2 id="신뢰-자산에-대해-고민-들어갑니다">신뢰 자산에 대해 고민 들어갑니다.</h2>
-<p>최근 들어 부쩍 ‘회사에서의 신뢰 자산’에 대한 생각을 많이 하게 되었다. 롱블랙에서 읽은 최인아 책방의 ‘최인아님’에 대한 글도 이 생각에 불을 키웠다. ‘회사에서 나라는 존재는 얼마나 신뢰받을까?’부터 ‘내가 속한 팀의 구성원과 리더에게 내가 느끼는 신뢰’는 어느 정도이고, ‘회사는 얼마나 믿을 수 있는 곳인가?’에 대한 생각으로 이어졌다. 그래서 내가 생각해 본 ‘신뢰 자산’에 대한 이야기를 오늘 글로 풀어본다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 16px" />
+  </script><link rel="preload" href="/fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="block font-nanum"><header class="header" id="header"><nav class="nav-container" id="header-container"><a id="blog-title" class="cursor-pointer" href="/"><img src="../../hk-blog-icon.png" alt="blog-logo" class="max-h-14 w-full max-w-[3.5rem]"/></a><div class="flex justify-between cursor-pointer items-center"><a class="hover-text-gray px-2 py-1" href="/hankyeolk/">누구세요?</a></div></nav></header><section class="container mx-auto max-w-5xl flex flex-col items-center font-sans min-h-[600px] md:min-h-[1024px] "><header class="postHeader-container"><h3>👨‍💻</h3><p class="postHeader-title">VSCode에서 커스텀 스니펫(코드조각) 등록하여 효율성 조금 높이기</p><p class="postHeader-dateNcagtegory">2023-06-26<!-- -->   |   <!-- -->개발 블로그</p></header><section class="postPage-container"><div class="postPage-content"><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe15087ad-3f3e-4234-9b41-0f18d5da1e76%2Fdevelopment.png?table=block&amp;id=e881e5d4-691c-44cf-ad4d-178aa9050e7c&amp;spaceId=8b0941ab-7438-4d26-bc5a-baa5da72052c&amp;width=1900&amp;userId=58220135-364e-4669-99a8-fa4af12740ae&amp;cache=v2" alt="post-img" class="w-full mb-5"/><div class="postPage-html"><h3 id="반복은-귀찬아">반복은 귀찬아!</h3>
+<p>VSCode에서 코드 작업을 하다보면 파일마다 반복적인 모듈을 호출하거나, 리액트 컴포넌트를 만들 때 반복적인 함수 코드를 작성하며 시작하곤 한다. 마크다운 형식으로 블로그 글을 작성할 때에도 <code>Frontmatter</code>와 같은 요소를 반복적으로 작성하면서 시작한다. 이런 반복은 여간 귀찮은게 아니다. 귀찮으면 단순화 시켜야 한다. 반복적인걸 반복하지 않게 만들어야 한다. 이게 우리의 숙명 아닌가?</p>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="VSCode의-Code-Snippets-Custom-Configure-코드-조각-커스텀">VSCode의 Code Snippets Custom Configure (코드 조각 커스텀)</h3>
 <blockquote>
-<p>본격적으로 이야기하기에 앞서, 이 글은 ‘신뢰 자산’에 대한 내 생각을 풀어내는 데 초점이 맞춰있다. ‘신뢰 자산을 잘 쌓는 방법’이라든지, ‘신뢰 자산의 크기를 키워야 한다!’ 와 같은 방향으로 이야기를 이어가지 않을 예정이다.</p>
+<p><strong>Snippet</strong> 은 일반 명사로 작은 정보나 조각을 뜻한다. 코드 작업에서는 작은 조각으로 반복적인 작업을 단순화 시켜버리는 일 자체를 의미하기도 한다.</p>
 </blockquote>
-<p style="display: block; margin-top: 0px; margin-bottom: 32px" />
-<p>‘신뢰 자산’도 기본적으로 ‘자산’이기 때문에 회계에서의 자산을 구성하는 ‘자본’과 ‘부채’의 개념에 빗댈 수 있을 것 같다. (자산 = 자본 + 부채)</p>
-<p>신뢰 자산에서 ‘자본 신뢰’는, 현재의 내가 최대한 끌어모을 수 있거나 다른 어떤 사람이 툭 건드려도 바로 튀어나올 수 있을 정도로 괜찮은 정도의 ‘내가 가진 신뢰’라고 정의해본다. ‘부채 신뢰’는, 그동안 쌓아둔 어느 정도의 신뢰인데, 나 스스로가 가지고 있지는 않고 보통 ‘인정’이라는 단어로 포장돼서 ‘인정받은 만큼 증명해야/되갚아야’ 하는 신뢰로 볼 수 있다.</p>
-<p>보통 ‘집을 구한다’고 하면 내가 가진 어느 정도의 자본(최대한의)과 은행으로부터 비롯된 (대부분의) 부채(대출)의 조화로운 결과를 말한다. 신뢰 자산도 집을 구하는 것과 마찬가지로 내가 가진 신뢰와 상대에게서 오는 신뢰를 조합한 결과다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 48px" />
-<h2 id="나와-리더와-회사의-신뢰-자산">나와 리더와 회사의 신뢰 자산</h2>
-<p>그러면 회사에서의 신뢰 자산은 어떤 자본과 부채들로 구성되어 있을까? 나와 나의 리더와 나의 회사에 대한 신뢰 자산을 각각 고민해보았다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 32px" />
-<h3 id="나의-신뢰-자산">나의 신뢰 자산</h3>
-<p>지금의 회사에서 <strong>나에 대한 신뢰 자산</strong>을 구성하는 자본 신뢰와 부채 신뢰를 대략적으로 정리하면 다음과 같았다. <br /></p>
-<ul>
-<li>회사를 (다른 크루에 비해서) 비교적 오래 다녔다는 사실 - 자본 신뢰</li>
-<li>회사에서 여러 포지션, 여러 팀을 거치면서 경험한 다양한 프로젝트와 그 결과물, 그에 동반된 업무 실력 - 자본 신뢰</li>
-<li>만들어진 ‘주어진 일을 진취적으로 해낼 수 있을 것이다’라는 업무적 이미지 - 부채 신뢰</li>
-<li>회사에서 지급받는 금전적 신뢰 (급여)* - 부채 신뢰</li>
-<li>회사의 비전에 공감하며 비즈니스 성공이라는 같은 End-Goal을 향해 함께 나아갈 수 있는 동료라는 믿음 - 부채 신뢰</li>
-</ul>
-<p><em>*급여를 자본과 부채 중 어디로 묶어야 할지 고민을 조금 해보았는데, 받은 만큼 해낼 수 있어야 또는 해낼 것이라는 기대에 대한 반대급부라는 사실로 기울어서 부채신뢰로 선택했다.</em></p>
-<p style="display: block; margin-top: 0px; margin-bottom: 16px" />
-<p>부채 신뢰가 큰 파이를 차지하는 것 같지만, 이정도라면 회사에서 ‘나’라는 크루는 자본성 신뢰와 부채성 신뢰의 적절한 조화가 있는 상태라고 생각해볼 수 있었다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 32px" />
-<h3 id="리더의-신뢰-자산">리더의 신뢰 자산</h3>
-<p>팀원이라는 입장에서 <strong>나를 리딩해주는 팀 리더에 대한 신뢰 자산</strong>도 고민해 보았다.</p>
-<ul>
-<li>나와 확실하게 차이 나는 업무적 역량이 있다. - (리더의) 자본 신뢰</li>
-<li>나와 확실하게 차이 나는 경험의 깊이가 있다. - 자본 신뢰</li>
-<li>나와 팀이 올바르고 동일한 방향으로 가고 있는지 끊임없이 반문하고 고민하는 흔적이 있다. - 자본 신뢰</li>
-<li>그 방향성이 자신과 다르더라도 나 또는 팀이 선회할 수 있도록 설득할 수 있는 역량이 있다. - 부채 신뢰</li>
-<li>팀에 도움이 될 수 있다면 어떤 희생*도 먼저 나서서 할 것이라는 믿음이 있다. - 부채 신뢰</li>
-</ul>
-<p><em>*희생이라고 표현했지만, 사실은 팀을 위한 목소리를 내어줄 수 있는가에 대한 신뢰 자산을 의미한다.</em></p>
-<p style="display: block; margin-top: 0px; margin-bottom: 16px" />
-<p>확실한 건, 지금 함께하고 있는 나를 리딩해주는 현재의 리더는 이 회사에서 만난 그 어떤 리더보다 더 단단하고 자산적 가치가 큰 신뢰를 보유하고 있다. 내가 팀 리더에게 기대하는 모습을 대부분 갖춰서 ‘내가 리더가 된다면 지금의 리더처럼 해봐야겠다.’라는 원금 상환형 부채 신뢰를 가졌다고 생각한다. (나에게 큰 행운이다.)</p>
-<p>이렇게 보면 ‘리더’라는 크루는 팀원들의 기대감을 ‘역시’라는 인정으로 바꿀 수 있는 부채성 신뢰가 큰 파이를 차지하면서 ‘뚜렷한 능력’이라는 자본적 신뢰가 있어야 하는 것 같다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 32px" />
-<h3 id="회사의-신뢰-자산">회사의 신뢰 자산</h3>
-<p>마지막으로, 회사가 가진 신뢰 자산을 고민하지 않을 수 없었다.</p>
-<ul>
-<li>회사의 코어밸류(핵심가치)에 맞춰서 문화와 업무수행 방식이 지켜지고 있는가? - (회사의) 자본 신뢰</li>
-</ul>
-<p>사실 회사가 가져야 하는 신뢰 자산은 코어밸류 하나에서 생각을 멈추게 했다. 회사가 구성원에게 보여줘야 하거나 쌓아가야 하는 신뢰 자산은 회사가 궁극적으로 달성해야 하거나 최소한으로 지켜야 하는 코어밸류에 기반해야 하는 것 같다. 코어밸류에 기반하여 구성원이 최선과 열의를 다할 수 있는 환경인지 끊임없이 반문해보면 자연스럽게 회사에 대한 ‘기대감'이란 이름의 부채성 신뢰가 형성될 수 있다고 본다. 이와 더불어 코어밸류를 잘 지켜나가면서 비즈니스적인 성과를 보여준다면 ‘안정감’이라는 자본적 신뢰를 탄탄하게 만들 수 있다고 생각한다.</p>
-<p>회사는 구성원들과 대결하는게 아니라 2인3각 달리기처럼 발맞춰 같은 골인 지점으로 달려가는 조직이기 때문에 코어밸류를 기반으로 한 회사의 신뢰 자산은 무엇보다 (특히 나에게) 중요하다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 48px" />
-<h2 id="정리해보면">정리해보면.</h2>
-<p>장황하게 돌아온 이 글의 결론은 다시, ‘신뢰 자산’을 ‘자산’의 한 종류라고 돌아보자는 것이다. 우리가 열심히 구한 집에서 온전히 나의 것이라고 부를 수 있는 게 ‘화장실’ 정도인 상황과 비슷하다. 내가 생각하는 ‘나와 리더와 회사에 대한 신뢰 자산’은 각각의 신뢰 자산 간에 어떤 찰떡궁합이 있는지 찾아가는 과정이다. 세 개의 자산들이 가지고 있는 자본성 신뢰와 부채성 신뢰를 어느 정도의 비율로 조합할지는 스스로가 정하면 된다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 16px" />
-<p>중요한 건 어느 하나의 신뢰 자산이 다른 신뢰 자산을 지배하거나 보다 더 중요하다고 정해놓고 재고 따지지 않아야 한다는 것이다. 나도 회사에서 리더에게, 회사에 신뢰받을 수 있는 자산을 갖춰야 한다. 리더도 팀원들에게 인정받기 위해서 나름의 신뢰 자산을 쌓아야 한다. (나도 언젠가 리더가 될 수 있다는 사실을 잊지 말자) 마지막으로 회사도 계속 다니고 싶은 직장으로의 신뢰 자산이 필요하다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 16px" />
-<p>세 개의 신뢰 자산에 대한 어떤 축이 무너지고 있다면, 내가 보유했거나 어떤 다른 자산 쪽에서 보유하고 있던 부채성 신뢰 자산의 만기가 도래한 것은 아닌지 곱씹어 볼 필요도 있다.</p>
-<p style="display: block; margin-top: 0px; margin-bottom: 48px" />
+<p style='display: block; margin: 0 0 16px 0' />
+<p>다행스럽게도 VSCode에는 (이미 많은 VSCode 사용자들이 애용하는) 커스텀 코드 조각 등록 기능이 있다. 물론, VSCode에 내장된 많은 코드 조각들이 있다. 하지만 내장된 코드 조각은 코드를 생성한 다음 다시 내 입에 맞게 수정을 해야하는 경우가 많았다. 그래서 나는 내가 주로 반복해서 작성하는 코드들을 작은 ‘명령어’ 형태의 조각으로 등록해서 빠르게 호출될 수 있게 세팅했다.</p>
+<p>이번 글에서는 내가 등록해둔 <strong>frontmatter가 있는 마크다운 문서를 위한 코드 조각</strong>과 <strong>props의 타입을 정의한 리액트 array functional component의 코드 조각</strong>을 소개하면서, VSCode에서 커스텀 코드 조각을 등록하는 방법에 대해 기록을 남긴다.</p>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="기본-절차">기본 절차</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/43c777d8f08a67141170c5f8cf6fe486/a777a/longblack.jpg"
+    href="/static/89a27b8640bfa88f61182185a48e223d/a6ec4/codesnippet-setting1.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHsY7KFEoQH/8QAGRAAAgMBAAAAAAAAAAAAAAAAAREAECEx/9oACAEBAAEFAiS2YOLUKVDJ/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFBABAAAAAAAAAAAAAAAAAAAAMP/aAAgBAQAGPwIf/8QAGxAAAwADAQEAAAAAAAAAAAAAAAERITFhEHH/2gAIAQEAAT8hoZOw1QnI5ebbZBIlb+n/2gAMAwEAAgADAAAAEGDAAP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQEBAAICAwAAAAAAAAAAAAERACFhMUFRgfD/2gAIAQEAAT8QAAgH4NDv3MyFq66dV9b8FwQh4zVfReMAErz3pqh9qu//2Q=='); background-size: cover; display: block;"
+    style="padding-bottom: 15.234375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlElEQVR42n3LSw6CMABAQU4CCAREEEIxjW1pkfCp4v3P81zoTuNilhMUVUvdCsI0J0pz4qwgSgvi7EiSlxz+iD4nTHKi7H2CsldIO2Osw7gbUmm0dVzklVPdUDUt1fmHpsXYETtOTPOKGhxl3RBINeD3J+uysO8PvN/Y1pW79yil6LoOIcSXXgi0VhitGYxhdA4pJS8o+V6sIyF7BQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="롱블랙 - 최인아님"
+        alt="코드 조각 1"
         title=""
-        src="/static/43c777d8f08a67141170c5f8cf6fe486/72e01/longblack.jpg"
-        srcset="/static/43c777d8f08a67141170c5f8cf6fe486/e4a55/longblack.jpg 256w,
-/static/43c777d8f08a67141170c5f8cf6fe486/36dd4/longblack.jpg 512w,
-/static/43c777d8f08a67141170c5f8cf6fe486/72e01/longblack.jpg 1024w,
-/static/43c777d8f08a67141170c5f8cf6fe486/ac99c/longblack.jpg 1536w,
-/static/43c777d8f08a67141170c5f8cf6fe486/a777a/longblack.jpg 1773w"
+        src="/static/89a27b8640bfa88f61182185a48e223d/2bef9/codesnippet-setting1.png"
+        srcset="/static/89a27b8640bfa88f61182185a48e223d/6f3f2/codesnippet-setting1.png 256w,
+/static/89a27b8640bfa88f61182185a48e223d/01e7c/codesnippet-setting1.png 512w,
+/static/89a27b8640bfa88f61182185a48e223d/2bef9/codesnippet-setting1.png 1024w,
+/static/89a27b8640bfa88f61182185a48e223d/a6ec4/codesnippet-setting1.png 1438w"
         sizes="(max-width: 1024px) 100vw, 1024px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -138,7 +93,191 @@
       />
   </a>
     </span></p>
-<p style="display: block; margin-top: 0px; margin-bottom: 48px" /></div><div class="w-full mt-3"></div></div><div class="postPage-toc-container"><p class="text-[#343a40] text-sm border-b pb-1 mb-2">목차</p><div class="postPage-toc"><a>신뢰 자산에 대해 고민 들어갑니다.</a><a>나와 리더와 회사의 신뢰 자산</a><a>정리해보면.</a></div></div></section><section class="postNav-container"><p class="text-xl font-medium text-[#495057] mb-4">이어지는 글,</p><div class="postNav-card-container"><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-06-26/"><div class="postNav-icon">👨‍💻</div><div class="postNav-info-container"><h3 class="postNav-title">VSCode에서 커스텀 스니펫(코드조각) 등록하여 효율성 조금 높이기</h3><p class="postNav-date">2023-06-26</p></div></a></div><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-05-22/"><div class="postNav-icon">📚</div><div class="postNav-info-container"><h3 class="postNav-title">책 &#x27;일의 격&#x27; - 내 삶에서의 변화는</h3><p class="postNav-date">2023-05-22</p></div></a></div></div></section></section><footer class="footer" id="footer"><div class="footer-container"><p class="text-sm font-normal text-[#212529]">여기까지 스크롤을 내려주셔서 감사합니다 :-)</p><div class="footer-info-container"><p class="text-sm font-light text-[#343a40]">© 2023 hankyeolk</p><div class="footer-aboutMe"><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="LinkedIn"><a href="https://www.linkedin.com/in/hankyeolk/" target="_blank">LinkedIn</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="notion"><a href="https://bit.ly/notion-hk" target="_blank">notion</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Github"><a href="https://github.com/hankyeol-dev" target="_blank">Github</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Resume"><a href="https://bit.ly/notion-resume-hk" target="_blank">Resume</a></button></div></div></div></footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2023-06-22/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<blockquote>
+<p>shift + cmd + p를 입력해주자.</p>
+</blockquote>
+<p style='display: block; margin: 0 0 16px 0' />
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0951d25603fc542e46edc7297eef013e/a6ec4/codesnippet-setting2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 11.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAbElEQVR42m3DSRKCMBRAQa4iAjEjPyKlMQQRRe9/oufGnXZVV8oJ2gVskO+I8YIJgo8DnbY0StMo8/deaepWUbcHdp2mOp0T6/bm/nyxPDZyuZFyIU0zl+uElyMuyO8+Yn1PHEbKspLnBRlGPi9fPlKmZQo8AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="코드 조각 2"
+        title=""
+        src="/static/0951d25603fc542e46edc7297eef013e/2bef9/codesnippet-setting2.png"
+        srcset="/static/0951d25603fc542e46edc7297eef013e/6f3f2/codesnippet-setting2.png 256w,
+/static/0951d25603fc542e46edc7297eef013e/01e7c/codesnippet-setting2.png 512w,
+/static/0951d25603fc542e46edc7297eef013e/2bef9/codesnippet-setting2.png 1024w,
+/static/0951d25603fc542e46edc7297eef013e/a6ec4/codesnippet-setting2.png 1438w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<blockquote>
+<p>사용자 코드 조각 구성을 선택하여 원하는 언어와 프레임워크를 선택하자.</p>
+</blockquote>
+<p style='display: block; margin: 0 0 16px 0' />
+<ul>
+<li>VSCode에서 <code>Shift + CMD + P</code> 키를 눌러 설정 등록 목록을 열어준다. 위와 같은 이미지의 입력창이 열릴건데, ‘코드’라고 작성을 하여 ‘코드 조각: 사용자 코드 조각 구성’을 선택한다. (Snippets: Configure User Snipppets)</li>
+<li>어떤 언어의 어떤 프레임워크 파일에서 코드 조각을 커스텀 할 것인지 선택하면 된다. 나 같은 경우에는 markdown.json과 typescriptreact.json을 각각 선택하여 등록했다.</li>
+</ul>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="Frontmatter가-있는-마크다운-문서를-위한-코드-조각">Frontmatter가 있는 마크다운 문서를 위한 코드 조각</h3>
+<p>markdown.json에 주석으로 설명된 부분만 보더라도 쉽게 커스텀 코드 조각을 등록할 수 있을 것이다. 코드 조각을 등록하기 위해서는 json 형식으로 “prefix”, “body”에 해당하는 내용만 잘 채워주면 된다.</p>
+<ul>
+<li>"prefix" : 코드 조각 그 자체. VSCode에서 조각처럼 입력해서 반복적인 코드를 불러내는 key words를 등록한다.</li>
+<li>"body" : prefix에 등록된 코드 조각이 불러내는 반복적인 코드 그 자체를 등록한다.</li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p>“description”이라는 키에도 특정 값을 등록할 수 있는데, 말 그대로 내가 등록하는 코드 조각이 어떤 역할을 하는 조각인지에 대한 설명을 입력할 수 있다. 그런데, 보통 내가 직접 등록한 코드 조각별로 어떤 코드를 불러내는지 손이 외우고 있어서 설명을 잘 보지는 않는다. 그래도 자동 완성시에 등록한 설명을 읽어보면서 신중하게 선택할 수 있게 도와주는 요소로 description을 작성하는 편이다.</p>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c36e407d8563a06e9eedd5caf5b4fc12/0ef7e/codesnippet-setting4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.9375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABV0lEQVR42p2S647TMBCF+yCgduvE8WXs+NI0pVy0u9IiJN7/eT7kFEJACG33x5E1Y/nTmTnelfoJmb8TpydiueLrM2F6IU7PxPMLvj7hyiPSznQl1iuhfMSNM368YOMZP85IumDDxM64RJ4eyddvTJcvpMtXpHzGhhM+zXQ20ZmRUD4w+IKTCS+FfhjpTEQZ4aH3iw6dZWekMriMdhXtyvJI20xv0yLtMoMr6KVf0DpjtDDodjfSucChcz+Bjt0gJ8xGf9dbNWCMZ0KpKJd40LLCfgN95TVagC5jQ0VLQUnhaBOH3nHoNkDzH0er6xVYOPa3nfVG6LQs9R8jvwZomstl1xU9ZJSJyJixPqF0uB/4y2FL29rKYDLvjoa9cjfYW0e+ARPnNON9Rv0rlHuAy1cyEWtHjlpWyJtHbim3VN8ry37j7G6H21CcORFtYtDCXtnVYVOrfwCt72nhz6f6egAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="코드 조각 3"
+        title=""
+        src="/static/c36e407d8563a06e9eedd5caf5b4fc12/2bef9/codesnippet-setting4.png"
+        srcset="/static/c36e407d8563a06e9eedd5caf5b4fc12/6f3f2/codesnippet-setting4.png 256w,
+/static/c36e407d8563a06e9eedd5caf5b4fc12/01e7c/codesnippet-setting4.png 512w,
+/static/c36e407d8563a06e9eedd5caf5b4fc12/2bef9/codesnippet-setting4.png 1024w,
+/static/c36e407d8563a06e9eedd5caf5b4fc12/71c1d/codesnippet-setting4.png 1536w,
+/static/c36e407d8563a06e9eedd5caf5b4fc12/0ef7e/codesnippet-setting4.png 1594w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<blockquote>
+<p>description을 등록하면 위 이미지처럼 설명이 노출된다.</p>
+</blockquote>
+<p style='display: block; margin: 0 0 24px 0' />
+<p>나는 블로그 작성을 위해 아래와 같은 마크다운 코드 조각을 등록해서 사용한다. 커스텀 코드 조각을 등록할 때는 몇 가지 변수를 활용할 수도 있다. <code>${변수}</code> 형태로 사용한다. 나는 글 작성일을 문서 생성일로 등록하기 위해서 <code>${CURRENT_YEAR}</code>와 같은 변수를 사용했다.</p>
+<p style='display: block; margin: 0 0 32px 0' />
+<deckgo-highlight-code language="json" terminal="carbon" theme="one-light"  >
+          <code slot="code">&quot;Set Blog Template - Book&quot;: {
+  &quot;prefix&quot;: &quot;bbm&quot;,
+  &quot;body&quot;: [
+    &quot;---&quot;,
+    &quot;emoji: 📚&quot;,
+    &quot;title: &quot;,
+    &quot;createdAt: &#39;${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}&#39;&quot;,
+    &quot;categories: &#39;책&#39;&quot;,
+    &quot;tags: &#39;책&#39;&quot;,
+    &quot;---&quot;,
+    &quot;\n&quot;,
+    &quot;&lt;p style=&#39;display: block; margin: 0 0 16px 0&#39; /&gt;&quot;,
+    &quot;\n&quot;
+  ],
+  &quot;description&quot;: &quot;bbm - 책과 관련된 블로그를 작성할 때 사용!&quot;
+}</code>
+        </deckgo-highlight-code>
+<p style='display: block; margin: 0 0 24px 0' />
+<ul>
+<li>CURRENT_YEAR : 현재 연도</li>
+<li>CURRENT_MONTH : 현재 월 (06와 같이 두 자리 숫자로 구성)</li>
+<li>CURRENT_DATE : 현재 일 (07와 같이 두 자리 숫자로 구성)</li>
+</ul>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="props의-타입이-Index-Signature-방식으로-지정된-리액트-컴포넌트-코드-조각">props의 타입이 Index Signature 방식으로 지정된 리액트 컴포넌트 코드 조각</h3>
+<p>리액트 컴포넌트를 위한 코드 조각도 마크다운 코드 조각을 작성하는 방식대로 하면된다. 나 같은 경우에는 컴포넌트명과 파일명을 동일하게 작성하는 경우가 많아서 파일명을 받아올 수 있는 변수를 활용했다.</p>
+<p style='display: block; margin: 0 0 32px 0' />
+<deckgo-highlight-code language="json" terminal="carbon" theme="one-light"  >
+          <code slot="code">&quot;tsx - array functional component with props type&quot;: {
+  &quot;prefix&quot;: &quot;fcwt&quot;,
+  &quot;body&quot;: [
+    &quot;import React from &#39;react&#39;&quot;,
+    &quot;\n&quot;,
+    &quot;type ${TM_FILENAME_BASE}${1:}Props = { &quot;,
+    &quot;  [key: string]: any&quot;,
+    &quot;}&quot;,
+    &quot;\n&quot;,
+    &quot;const ${TM_FILENAME_BASE}${1:} = ({}:${TM_FILENAME_BASE}${1:}Props) =&gt; {&quot;,
+    &quot;\n&quot;,
+    &quot;  return (&quot;,
+    &quot;    &lt;div&gt;&quot;,
+    &quot;      &lt;div&gt;&lt;/div&gt;&quot;,
+    &quot;    &lt;/div&gt;&quot;,
+    &quot;  )&quot;,
+    &quot;}&quot;,
+    &quot;\n&quot;,
+    &quot;export default ${TM_FILENAME_BASE}${1:}&quot;
+  ],
+  &quot;description&quot;: &quot;리액트 화살표 함수 컴포넌트 w.Props Types&quot;
+}</code>
+        </deckgo-highlight-code>
+<p style='display: block; margin: 0 0 24px 0' />
+<ul>
+<li>TM_FILENAME_BASE : 확장자를 땐 문서의 파일 이름을 가져온다.</li>
+<li>1: : 코드 조각을 생성했을 때, 커서 위치를 등록할 수 있다. 컴포넌트 이름과 Props Type의 이름을 바꿀 때가 간혹 있어서 코드 생성 후 수정될 수 있는 코드 위치에 커서를 놓았다.</li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 758px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 117.578125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAAClklEQVR42q1U7Y7aMBDMs1wJEDtOHH/n0yTAAS13alWpff8nmcoObWl1iKPqjwGyDpOdmewmg/mEyX2GERvsTI9Jdah4C29fIcQA2Teodx5MWDDjoKYOVddAjh30roc9DCisQ1nXkL5FkrMWZdmBMoOiMCgLg4xpFGUDwgwI18iFwTpXyJgCKXWsUWFApUEubaxHlBrJyzHFkhZYZAJPa46ndRV/p6RCSiRWRGJJBFZUzriqLbMZ12fJ2D7DqiOsq/F8OGO7PaBvOxS6h9IahDlQ3oCU9R+gV7iuJ1ocsPVf0Q4T+v0Zzf4MfzhB1TuIYUSuPTJmkBUOWWHvIuGigtADuPFIS4e1bJHZEYy3IHYDonusSPVb1h0kXIjZDyKwjj4IrLJAcPkO9Vy9G0kayOjF2NAJqbAkEnNdIs0qpDGkn+GIeH6zQ1Y24LyPxufKg8oRpXQQskcpHITxUKaDUA5c1aBFA1bp2dc3kDTmhLH+DG52kLvv4P4bGu8xDWd4P+H59AX7/RHnjxP8NEGrA0xtYwNvIQltpqS6SJk9W1EV5QXZUe5F8iwr3KduS85yjWvM5sobpss75wpJGK9WH9GZE6zYgjKL1dUfVg8kHAnDR85rTHYDp/qY7PKScJAQSal8P2FYBKGLoqoxGQ/rNmjcBhs9gHL3ENmlQ4mstGjrEQc3olIdaDFvnviwRwlp7sCKOpKwYl5TUfa/SlZaxnTDtFyT/Arl0Q4Zf2xW7xIusgoLwuNLvSAiIqXzskjX/KFNE19sKUYYtQevBjjZoZY9ZNWAyx662YOpbZxRUrh3Ic7y4F4h5QRvPDZmE4mVHdGOLyjtMS7Ovzf2LSQp4ViQMs7zByIiguRwvYiSxWOS/2cgIZQfsp/t6TdGO+4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="코드 조각 4"
+        title=""
+        src="/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png"
+        srcset="/static/b9e31ad5d680a3e618f947d1004717bc/6f3f2/codesnippet-setting5.png 256w,
+/static/b9e31ad5d680a3e618f947d1004717bc/01e7c/codesnippet-setting5.png 512w,
+/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png 758w"
+        sizes="(max-width: 758px) 100vw, 758px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<blockquote>
+<p>커서 변수를 활용하면 이렇게 커서가 깜빡인다.</p>
+</blockquote>
+<p style='display: block; margin: 0 0 48px 0' />
+<p>오늘 소개한 커스텀 코드 조각 등록은 엄청난 팁은 아니지만 코드를 칠 때 작게나마 효율성을 확실히 높여준다. 아직 사용해보지 않았다면 꼭 사용해보시라!</p>
+<p style='display: block; margin: 0 0 48px 0' /></div><div class="w-full mt-3"></div></div><div class="postPage-toc-container"><p class="text-[#343a40] text-sm border-b pb-1 mb-2">목차</p><div class="postPage-toc"><a>반복은 귀찬아!</a><a>VSCode의 Code Snippets Custom Configure (코드 조각 커스텀)</a><a>기본 절차</a><a>Frontmatter가 있는 마크다운 문서를 위한 코드 조각</a><a>props의 타입이 Index Signature 방식으로 지정된 리액트 컴포넌트 코드 조각</a></div></div></section><section class="postNav-container"><p class="text-xl font-medium text-[#495057] mb-4">이어지는 글,</p><div class="postNav-card-container"><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-06-22/"><div class="postNav-icon">🤝</div><div class="postNav-info-container"><h3 class="postNav-title">신뢰라는 자산에 대해서</h3><p class="postNav-date">2023-06-22</p></div></a></div></div></section></section><footer class="footer" id="footer"><div class="footer-container"><p class="text-sm font-normal text-[#212529]">여기까지 스크롤을 내려주셔서 감사합니다 :-)</p><div class="footer-info-container"><p class="text-sm font-light text-[#343a40]">© 2023 hankyeolk</p><div class="footer-aboutMe"><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="LinkedIn"><a href="https://www.linkedin.com/in/hankyeolk/" target="_blank">LinkedIn</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="notion"><a href="https://bit.ly/notion-hk" target="_blank">notion</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Github"><a href="https://github.com/hankyeol-dev" target="_blank">Github</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Resume"><a href="https://bit.ly/notion-resume-hk" target="_blank">Resume</a></button></div></div></div></footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2023-06-26/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
