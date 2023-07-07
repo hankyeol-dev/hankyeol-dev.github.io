@@ -50,234 +50,102 @@
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-NMDH9DXJJG', options);
-  </script><link rel="preload" href="/fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="block font-nanum"><header class="header" id="header"><nav class="nav-container" id="header-container"><a id="blog-title" class="cursor-pointer" href="/"><img src="../../hk-blog-icon.png" alt="blog-logo" class="max-h-14 w-full max-w-[3.5rem]"/></a><div class="flex justify-between cursor-pointer items-center"><a class="hover-text-gray px-2 py-1" href="/hankyeolk/">누구세요?</a></div></nav></header><section class="container mx-auto max-w-5xl flex flex-col items-center font-sans min-h-[600px] md:min-h-[1024px] "><header class="postHeader-container"><h3>👨‍💻</h3><p class="postHeader-title">VSCode에서 커스텀 스니펫(코드조각) 등록하여 효율성 조금 높이기</p><p class="postHeader-dateNcagtegory">2023-06-26<!-- -->   |   <!-- -->개발 블로그</p></header><section class="postPage-container"><div class="postPage-content"><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe15087ad-3f3e-4234-9b41-0f18d5da1e76%2Fdevelopment.png?table=block&amp;id=e881e5d4-691c-44cf-ad4d-178aa9050e7c&amp;spaceId=8b0941ab-7438-4d26-bc5a-baa5da72052c&amp;width=1900&amp;userId=58220135-364e-4669-99a8-fa4af12740ae&amp;cache=v2" alt="post-img" class="w-full mb-5"/><div class="postPage-html"><h3 id="반복은-귀찬아">반복은 귀찬아!</h3>
-<p>VSCode에서 코드 작업을 하다보면 파일마다 반복적인 모듈을 호출하거나, 리액트 컴포넌트를 만들 때 반복적인 함수 코드를 작성하며 시작하곤 한다. 마크다운 형식으로 블로그 글을 작성할 때에도 <code>Frontmatter</code>와 같은 요소를 반복적으로 작성하면서 시작한다. 이런 반복은 여간 귀찮은게 아니다. 귀찮으면 단순화 시켜야 한다. 반복적인걸 반복하지 않게 만들어야 한다. 이게 우리의 숙명 아닌가?</p>
+  </script><link rel="preload" href="/fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="block font-nanum"><header class="header" id="header"><nav class="nav-container" id="header-container"><a id="blog-title" class="cursor-pointer" href="/"><img src="../../hk-blog-icon.png" alt="blog-logo" class="max-h-14 w-full max-w-[3.5rem]"/></a><div class="flex justify-between cursor-pointer items-center"><a class="hover-text-gray px-2 py-1" href="/hankyeolk/">누구세요?</a></div></nav></header><section class="container mx-auto max-w-5xl flex flex-col items-center font-sans min-h-[600px] md:min-h-[1024px] "><header class="postHeader-container"><h3>👨‍💻</h3><p class="postHeader-title">2023년 상반기 KPT로 돌아보기</p><p class="postHeader-dateNcagtegory">2023-07-07<!-- -->   |   <!-- -->블로그</p></header><section class="postPage-container"><div class="postPage-content"><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F169dc6aa-7d4e-4a4e-9363-e7ec9143efed%2Fblog.png?table=block&amp;id=f33852d6-61be-4905-bd96-34932148ede3&amp;spaceId=8b0941ab-7438-4d26-bc5a-baa5da72052c&amp;width=1900&amp;userId=58220135-364e-4669-99a8-fa4af12740ae&amp;cache=v2" alt="post-img" class="w-full mb-5"/><div class="postPage-html"><p style='display: block; margin: 0 0 16px 0' />
+<h3 id="들어가면서">들어가면서,</h3>
+<p>뜨거운 여름과 함께 벌써 하반기가 찾아왔다. 지난 상반기는 영화 겨울왕국2에서 엘사/안나 부모님이 만난 얼어붙은 바다의 폭풍우와 같았다. 그 순간에는 폭풍우가 지나가기만을 바랐는데 지나고 나서 보니 왜 혼자서 그렇게 심각하게 받아들였는지 모르겠는 순간들도 있다. 폭풍우 같았던 상반기를 돌아보면서 '더 잘 살아가기 위한' 다짐을 해보고자 한다.</p>
+<p>이번 반기 회고는 지난 반기를 지배했던 감정과 총평을 먼저 남기고, KPT 방식으로 좋아서 유지하고 싶은 부분과 아쉬워서 개선하고 싶은 부분, 그래서 하반기에 어떻게 '잘' 살아가야 할지에 대한 셀프 다짐으로 마무리 하려고 한다. 연말에만 진행했던 '올해의 000'를 '상반기의 000'으로 조그맣게 빌릴 예정이다.</p>
 <p style='display: block; margin: 0 0 48px 0' />
-<h3 id="VSCode의-Code-Snippets-Custom-Configure-코드-조각-커스텀">VSCode의 Code Snippets Custom Configure (코드 조각 커스텀)</h3>
-<blockquote>
-<p><strong>Snippet</strong> 은 일반 명사로 작은 정보나 조각을 뜻한다. 코드 작업에서는 작은 조각으로 반복적인 작업을 단순화 시켜버리는 일 자체를 의미하기도 한다.</p>
-</blockquote>
-<p style='display: block; margin: 0 0 16px 0' />
-<p>다행스럽게도 VSCode에는 (이미 많은 VSCode 사용자들이 애용하는) 커스텀 코드 조각 등록 기능이 있다. 물론, VSCode에 내장된 많은 코드 조각들이 있다. 하지만 내장된 코드 조각은 코드를 생성한 다음 다시 내 입에 맞게 수정을 해야하는 경우가 많았다. 그래서 나는 내가 주로 반복해서 작성하는 코드들을 작은 ‘명령어’ 형태의 조각으로 등록해서 빠르게 호출될 수 있게 세팅했다.</p>
-<p>이번 글에서는 내가 등록해둔 <strong>frontmatter가 있는 마크다운 문서를 위한 코드 조각</strong>과 <strong>props의 타입을 정의한 리액트 array functional component의 코드 조각</strong>을 소개하면서, VSCode에서 커스텀 코드 조각을 등록하는 방법에 대해 기록을 남긴다.</p>
+<h3 id="2023년-상반기-총평">2023년 상반기 총평</h3>
+<p>2023년 상반기의 감정은 <strong>'과도했던 불안함과 때때로 찾아온 즐거운 순간들로 혼잡했다'</strong> 로 정리했다. 한숨이 눈에띄게 늘었다. 이는 점점 나이를 먹으면서 '나를 책임져야 한다'는 무게감 때문인 것 같다. 이런 무게감은 나 스스로가 '혼자서도 잘 살아가는 나'의 모습을 계속 신경쓰고 있어서 축적되는데 긍정적인 압박으로 받아들이려고 노력하는 중이다.</p>
+<p style='display: block; margin: 0 0 24px 0' />
+<p>2023년 상반기는 <strong>'몸은 상당히 건강해졌지만, 머리속이 너무 혼잡해서 온전히 내 것으로 가득차지 못해 아쉽다'</strong> 라고 총평한다. 내 삶에서 가장 중요한건 '나'인데 주변에서 발생하는 불안요소에 많은 신경이 쏠렸던 것 같다. 상반기에 느낀 아쉬움을 잘 회고해서 하반기에는 '나'에게 먼저 집중하여 주변으로 뻗어나갈 수 있게 노력할 것이다.</p>
 <p style='display: block; margin: 0 0 48px 0' />
-<h3 id="기본-절차">기본 절차</h3>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/89a27b8640bfa88f61182185a48e223d/a6ec4/codesnippet-setting1.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 15.234375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlElEQVR42n3LSw6CMABAQU4CCAREEEIxjW1pkfCp4v3P81zoTuNilhMUVUvdCsI0J0pz4qwgSgvi7EiSlxz+iD4nTHKi7H2CsldIO2Osw7gbUmm0dVzklVPdUDUt1fmHpsXYETtOTPOKGhxl3RBINeD3J+uysO8PvN/Y1pW79yil6LoOIcSXXgi0VhitGYxhdA4pJS8o+V6sIyF7BQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="코드 조각 1"
-        title=""
-        src="/static/89a27b8640bfa88f61182185a48e223d/2bef9/codesnippet-setting1.png"
-        srcset="/static/89a27b8640bfa88f61182185a48e223d/6f3f2/codesnippet-setting1.png 256w,
-/static/89a27b8640bfa88f61182185a48e223d/01e7c/codesnippet-setting1.png 512w,
-/static/89a27b8640bfa88f61182185a48e223d/2bef9/codesnippet-setting1.png 1024w,
-/static/89a27b8640bfa88f61182185a48e223d/a6ec4/codesnippet-setting1.png 1438w"
-        sizes="(max-width: 1024px) 100vw, 1024px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
-<blockquote>
-<p>shift + cmd + p를 입력해주자.</p>
-</blockquote>
-<p style='display: block; margin: 0 0 16px 0' />
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/0951d25603fc542e46edc7297eef013e/a6ec4/codesnippet-setting2.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 11.71875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAbElEQVR42m3DSRKCMBRAQa4iAjEjPyKlMQQRRe9/oufGnXZVV8oJ2gVskO+I8YIJgo8DnbY0StMo8/deaepWUbcHdp2mOp0T6/bm/nyxPDZyuZFyIU0zl+uElyMuyO8+Yn1PHEbKspLnBRlGPi9fPlKmZQo8AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="코드 조각 2"
-        title=""
-        src="/static/0951d25603fc542e46edc7297eef013e/2bef9/codesnippet-setting2.png"
-        srcset="/static/0951d25603fc542e46edc7297eef013e/6f3f2/codesnippet-setting2.png 256w,
-/static/0951d25603fc542e46edc7297eef013e/01e7c/codesnippet-setting2.png 512w,
-/static/0951d25603fc542e46edc7297eef013e/2bef9/codesnippet-setting2.png 1024w,
-/static/0951d25603fc542e46edc7297eef013e/a6ec4/codesnippet-setting2.png 1438w"
-        sizes="(max-width: 1024px) 100vw, 1024px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
-<blockquote>
-<p>사용자 코드 조각 구성을 선택하여 원하는 언어와 프레임워크를 선택하자.</p>
-</blockquote>
-<p style='display: block; margin: 0 0 16px 0' />
+<h3 id="Keep">Keep</h3>
+<p><strong>일상성을 잘 유지한 것</strong></p>
 <ul>
-<li>VSCode에서 <code>Shift + CMD + P</code> 키를 눌러 설정 등록 목록을 열어준다. 위와 같은 이미지의 입력창이 열릴건데, ‘코드’라고 작성을 하여 ‘코드 조각: 사용자 코드 조각 구성’을 선택한다. (Snippets: Configure User Snipppets)</li>
-<li>어떤 언어의 어떤 프레임워크 파일에서 코드 조각을 커스텀 할 것인지 선택하면 된다. 나 같은 경우에는 markdown.json과 typescriptreact.json을 각각 선택하여 등록했다.</li>
-</ul>
-<p style='display: block; margin: 0 0 48px 0' />
-<h3 id="Frontmatter가-있는-마크다운-문서를-위한-코드-조각">Frontmatter가 있는 마크다운 문서를 위한 코드 조각</h3>
-<p>markdown.json에 주석으로 설명된 부분만 보더라도 쉽게 커스텀 코드 조각을 등록할 수 있을 것이다. 코드 조각을 등록하기 위해서는 json 형식으로 “prefix”, “body”에 해당하는 내용만 잘 채워주면 된다.</p>
-<ul>
-<li>"prefix" : 코드 조각 그 자체. VSCode에서 조각처럼 입력해서 반복적인 코드를 불러내는 key words를 등록한다.</li>
-<li>"body" : prefix에 등록된 코드 조각이 불러내는 반복적인 코드 그 자체를 등록한다.</li>
+<li>나에게 가장 중요한 것은 일상을 일상답게 보내는 것이었다.</li>
+<li>그냥 흘러가듯이 사는게 아니라 흘러가는 과정에서 잘 살아왔다.</li>
+<li>일상적인 하루하루를 잘 가꿔온 것이 상반기에 가장 잘 한 일이고 <strong>하반기에도 유지해야 할 점</strong>이다.</li>
 </ul>
 <p style='display: block; margin: 0 0 24px 0' />
-<p>“description”이라는 키에도 특정 값을 등록할 수 있는데, 말 그대로 내가 등록하는 코드 조각이 어떤 역할을 하는 조각인지에 대한 설명을 입력할 수 있다. 그런데, 보통 내가 직접 등록한 코드 조각별로 어떤 코드를 불러내는지 손이 외우고 있어서 설명을 잘 보지는 않는다. 그래도 자동 완성시에 등록한 설명을 읽어보면서 신중하게 선택할 수 있게 도와주는 요소로 description을 작성하는 편이다.</p>
-<p style='display: block; margin: 0 0 24px 0' />
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/c36e407d8563a06e9eedd5caf5b4fc12/0ef7e/codesnippet-setting4.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 60.9375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABV0lEQVR42p2S647TMBCF+yCgduvE8WXs+NI0pVy0u9IiJN7/eT7kFEJACG33x5E1Y/nTmTnelfoJmb8TpydiueLrM2F6IU7PxPMLvj7hyiPSznQl1iuhfMSNM368YOMZP85IumDDxM64RJ4eyddvTJcvpMtXpHzGhhM+zXQ20ZmRUD4w+IKTCS+FfhjpTEQZ4aH3iw6dZWekMriMdhXtyvJI20xv0yLtMoMr6KVf0DpjtDDodjfSucChcz+Bjt0gJ8xGf9dbNWCMZ0KpKJd40LLCfgN95TVagC5jQ0VLQUnhaBOH3nHoNkDzH0er6xVYOPa3nfVG6LQs9R8jvwZomstl1xU9ZJSJyJixPqF0uB/4y2FL29rKYDLvjoa9cjfYW0e+ARPnNON9Rv0rlHuAy1cyEWtHjlpWyJtHbim3VN8ry37j7G6H21CcORFtYtDCXtnVYVOrfwCt72nhz6f6egAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="코드 조각 3"
-        title=""
-        src="/static/c36e407d8563a06e9eedd5caf5b4fc12/2bef9/codesnippet-setting4.png"
-        srcset="/static/c36e407d8563a06e9eedd5caf5b4fc12/6f3f2/codesnippet-setting4.png 256w,
-/static/c36e407d8563a06e9eedd5caf5b4fc12/01e7c/codesnippet-setting4.png 512w,
-/static/c36e407d8563a06e9eedd5caf5b4fc12/2bef9/codesnippet-setting4.png 1024w,
-/static/c36e407d8563a06e9eedd5caf5b4fc12/71c1d/codesnippet-setting4.png 1536w,
-/static/c36e407d8563a06e9eedd5caf5b4fc12/0ef7e/codesnippet-setting4.png 1594w"
-        sizes="(max-width: 1024px) 100vw, 1024px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
-<blockquote>
-<p>description을 등록하면 위 이미지처럼 설명이 노출된다.</p>
-</blockquote>
-<p style='display: block; margin: 0 0 24px 0' />
-<p>나는 블로그 작성을 위해 아래와 같은 마크다운 코드 조각을 등록해서 사용한다. 커스텀 코드 조각을 등록할 때는 몇 가지 변수를 활용할 수도 있다. <code>${변수}</code> 형태로 사용한다. 나는 글 작성일을 문서 생성일로 등록하기 위해서 <code>${CURRENT_YEAR}</code>와 같은 변수를 사용했다.</p>
-<p style='display: block; margin: 0 0 32px 0' />
-<deckgo-highlight-code language="json" terminal="carbon" theme="one-light"  >
-          <code slot="code">&quot;Set Blog Template - Book&quot;: {
-  &quot;prefix&quot;: &quot;bbm&quot;,
-  &quot;body&quot;: [
-    &quot;---&quot;,
-    &quot;emoji: 📚&quot;,
-    &quot;title: &quot;,
-    &quot;createdAt: &#39;${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}&#39;&quot;,
-    &quot;categories: &#39;책&#39;&quot;,
-    &quot;tags: &#39;책&#39;&quot;,
-    &quot;---&quot;,
-    &quot;\n&quot;,
-    &quot;&lt;p style=&#39;display: block; margin: 0 0 16px 0&#39; /&gt;&quot;,
-    &quot;\n&quot;
-  ],
-  &quot;description&quot;: &quot;bbm - 책과 관련된 블로그를 작성할 때 사용!&quot;
-}</code>
-        </deckgo-highlight-code>
-<p style='display: block; margin: 0 0 24px 0' />
+<p><strong>습관이 된 러닝과 등산</strong></p>
 <ul>
-<li>CURRENT_YEAR : 현재 연도</li>
-<li>CURRENT_MONTH : 현재 월 (06와 같이 두 자리 숫자로 구성)</li>
-<li>CURRENT_DATE : 현재 일 (07와 같이 두 자리 숫자로 구성)</li>
-</ul>
-<p style='display: block; margin: 0 0 48px 0' />
-<h3 id="props의-타입이-Index-Signature-방식으로-지정된-리액트-컴포넌트-코드-조각">props의 타입이 Index Signature 방식으로 지정된 리액트 컴포넌트 코드 조각</h3>
-<p>리액트 컴포넌트를 위한 코드 조각도 마크다운 코드 조각을 작성하는 방식대로 하면된다. 나 같은 경우에는 컴포넌트명과 파일명을 동일하게 작성하는 경우가 많아서 파일명을 받아올 수 있는 변수를 활용했다.</p>
-<p style='display: block; margin: 0 0 32px 0' />
-<deckgo-highlight-code language="json" terminal="carbon" theme="one-light"  >
-          <code slot="code">&quot;tsx - array functional component with props type&quot;: {
-  &quot;prefix&quot;: &quot;fcwt&quot;,
-  &quot;body&quot;: [
-    &quot;import React from &#39;react&#39;&quot;,
-    &quot;\n&quot;,
-    &quot;type ${TM_FILENAME_BASE}${1:}Props = { &quot;,
-    &quot;  [key: string]: any&quot;,
-    &quot;}&quot;,
-    &quot;\n&quot;,
-    &quot;const ${TM_FILENAME_BASE}${1:} = ({}:${TM_FILENAME_BASE}${1:}Props) =&gt; {&quot;,
-    &quot;\n&quot;,
-    &quot;  return (&quot;,
-    &quot;    &lt;div&gt;&quot;,
-    &quot;      &lt;div&gt;&lt;/div&gt;&quot;,
-    &quot;    &lt;/div&gt;&quot;,
-    &quot;  )&quot;,
-    &quot;}&quot;,
-    &quot;\n&quot;,
-    &quot;export default ${TM_FILENAME_BASE}${1:}&quot;
-  ],
-  &quot;description&quot;: &quot;리액트 화살표 함수 컴포넌트 w.Props Types&quot;
-}</code>
-        </deckgo-highlight-code>
-<p style='display: block; margin: 0 0 24px 0' />
-<ul>
-<li>TM_FILENAME_BASE : 확장자를 땐 문서의 파일 이름을 가져온다.</li>
-<li>1: : 코드 조각을 생성했을 때, 커서 위치를 등록할 수 있다. 컴포넌트 이름과 Props Type의 이름을 바꿀 때가 간혹 있어서 코드 생성 후 수정될 수 있는 코드 위치에 커서를 놓았다.</li>
+<li>꾸준한 운동이 오히려 하루의 시작을 더 가볍게 만들어준다는 사실을 알 수 있었던 상반기였다.</li>
+<li>체력이 있어야 꾸준하게 잘 살아갈 수 있다. <strong>조금씩 더 오래 달릴 수 있는 몸을 만드는게 하반기의 목표</strong>다.</li>
+<li>등산 77회 (4월 - 20회, 가장 길었던 등산 - 14.84KM)</li>
+<li>러닝 46회 (5월부터 집중적으로 진행했고, 6월은 2.5KM이상 17번을 달렸다)</li>
 </ul>
 <p style='display: block; margin: 0 0 24px 0' />
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 758px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 117.578125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAAClklEQVR42q1U7Y7aMBDMs1wJEDtOHH/n0yTAAS13alWpff8nmcoObWl1iKPqjwGyDpOdmewmg/mEyX2GERvsTI9Jdah4C29fIcQA2Teodx5MWDDjoKYOVddAjh30roc9DCisQ1nXkL5FkrMWZdmBMoOiMCgLg4xpFGUDwgwI18iFwTpXyJgCKXWsUWFApUEubaxHlBrJyzHFkhZYZAJPa46ndRV/p6RCSiRWRGJJBFZUzriqLbMZ12fJ2D7DqiOsq/F8OGO7PaBvOxS6h9IahDlQ3oCU9R+gV7iuJ1ocsPVf0Q4T+v0Zzf4MfzhB1TuIYUSuPTJmkBUOWWHvIuGigtADuPFIS4e1bJHZEYy3IHYDonusSPVb1h0kXIjZDyKwjj4IrLJAcPkO9Vy9G0kayOjF2NAJqbAkEnNdIs0qpDGkn+GIeH6zQ1Y24LyPxufKg8oRpXQQskcpHITxUKaDUA5c1aBFA1bp2dc3kDTmhLH+DG52kLvv4P4bGu8xDWd4P+H59AX7/RHnjxP8NEGrA0xtYwNvIQltpqS6SJk9W1EV5QXZUe5F8iwr3KduS85yjWvM5sobpss75wpJGK9WH9GZE6zYgjKL1dUfVg8kHAnDR85rTHYDp/qY7PKScJAQSal8P2FYBKGLoqoxGQ/rNmjcBhs9gHL3ENmlQ4mstGjrEQc3olIdaDFvnviwRwlp7sCKOpKwYl5TUfa/SlZaxnTDtFyT/Arl0Q4Zf2xW7xIusgoLwuNLvSAiIqXzskjX/KFNE19sKUYYtQevBjjZoZY9ZNWAyx662YOpbZxRUrh3Ic7y4F4h5QRvPDZmE4mVHdGOLyjtMS7Ovzf2LSQp4ViQMs7zByIiguRwvYiSxWOS/2cgIZQfsp/t6TdGO+4AAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="코드 조각 4"
-        title=""
-        src="/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png"
-        srcset="/static/b9e31ad5d680a3e618f947d1004717bc/6f3f2/codesnippet-setting5.png 256w,
-/static/b9e31ad5d680a3e618f947d1004717bc/01e7c/codesnippet-setting5.png 512w,
-/static/b9e31ad5d680a3e618f947d1004717bc/c8e86/codesnippet-setting5.png 758w"
-        sizes="(max-width: 758px) 100vw, 758px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
-<blockquote>
-<p>커서 변수를 활용하면 이렇게 커서가 깜빡인다.</p>
-</blockquote>
+<p><strong>블로그 전면 개편</strong></p>
+<ul>
+<li>미뤄왔던 블로그 개편을 상반기 사이드 프로젝트로 완료할 수 있었다.</li>
+<li>상반기 후반부부터긴 했지만 블로그 글도 내가 생각한 것보다 더 많이 작성했다.</li>
+<li>하반기에는 <strong>꾸준히 내 생각과 배운 것들, 읽은 것들을 정리</strong>하고자 한다.</li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><strong>식비 아끼기</strong></p>
+<ul>
+<li>회사 이전과 함께 도시락을 싸다니고 있다. 확실히 식비가 아껴지는게 느껴진다.</li>
+<li>하반기에는 <strong>더 건설적인 식생활을 할 수 있는 습관</strong>을 만들 예정이다.</li>
+</ul>
 <p style='display: block; margin: 0 0 48px 0' />
-<p>오늘 소개한 커스텀 코드 조각 등록은 엄청난 팁은 아니지만 코드를 칠 때 작게나마 효율성을 확실히 높여준다. 아직 사용해보지 않았다면 꼭 사용해보시라!</p>
-<p style='display: block; margin: 0 0 48px 0' /></div><div class="w-full mt-3"></div></div><div class="postPage-toc-container"><p class="text-[#343a40] text-sm border-b pb-1 mb-2">목차</p><div class="postPage-toc"><a>반복은 귀찬아!</a><a>VSCode의 Code Snippets Custom Configure (코드 조각 커스텀)</a><a>기본 절차</a><a>Frontmatter가 있는 마크다운 문서를 위한 코드 조각</a><a>props의 타입이 Index Signature 방식으로 지정된 리액트 컴포넌트 코드 조각</a></div></div></section><section class="postNav-container"><p class="text-xl font-medium text-[#495057] mb-4">이어지는 글,</p><div class="postNav-card-container"><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-07-07/"><div class="postNav-icon">👨‍💻</div><div class="postNav-info-container"><h3 class="postNav-title">2023년 상반기 KPT로 돌아보기</h3><p class="postNav-date">2023-07-07</p></div></a></div><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-06-22/"><div class="postNav-icon">🤝</div><div class="postNav-info-container"><h3 class="postNav-title">신뢰라는 자산에 대해서</h3><p class="postNav-date">2023-06-22</p></div></a></div></div></section></section><footer class="footer" id="footer"><div class="footer-container"><p class="text-sm font-normal text-[#212529]">여기까지 스크롤을 내려주셔서 감사합니다 :-)</p><div class="footer-info-container"><p class="text-sm font-light text-[#343a40]">© 2023 hankyeolk</p><div class="footer-aboutMe"><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="LinkedIn"><a href="https://www.linkedin.com/in/hankyeolk/" target="_blank">LinkedIn</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="notion"><a href="https://bit.ly/notion-hk" target="_blank">notion</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Github"><a href="https://github.com/hankyeol-dev" target="_blank">Github</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Resume"><a href="https://bit.ly/notion-resume-hk" target="_blank">Resume</a></button></div></div></div></footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2023-06-26/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<h3 id="Problem">Problem</h3>
+<p><strong>회사 상황에 내 삶을 온전히 빼앗긴 것</strong></p>
+<ul>
+<li>상반기에 회사가 많은 문제에 둘러 쌓이면서 폭풍우 같은 기간을 보내야만 했다.</li>
+<li><strong>그 속에만 푹 빠져서 내 삶 자체와 온전한 정신을 챙기지 못했다. 이건 확실히 문제였다.</strong></li>
+<li>하반기에는 '그래도 결국 잘 살아야 하는건 나다'는 마인드를 가지고 회사 속에서의 '나'를 꼭 잘 챙길 것이다. <em>나에게 질문을 많이하는 하반기가 되었으면 좋겠다.</em></li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><strong>아쉬운 관계 관리</strong></p>
+<ul>
+<li>상반기에는 '나'에게도 온전히 집중하지 못했기 때문에 주변의 좋은 관계를 유지하는 행동 역시 소홀했다.</li>
+<li>일부러 관계 유지와 형성에 시간을 많이 쓰지 않으려고 하기도 했던 것 같다.</li>
+<li>나는 '관계에서 힘을 얻는 유형'이기 때문에 하반기에는 내가 좋아하는 관계를 잘 지킬 수 있는 연습을 할 필요가 있다.</li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><strong>저조했던 개인 성장 관리</strong></p>
+<ul>
+<li>개인의 성장을 위해 기반을 닦는 일(독서, 개인 공부, 사이드 프로젝트 등) 앞에서 우물쭈물했다.
+<ul>
+<li>상반기에 완독하고 기록한 책 - 6권</li>
+</ul>
+</li>
+<li>아직 우물 속의 개구리에 불과하다는 것을 잘 알고 있으면서도 귀찮음에 쉽게 굴복했던 것 같다.</li>
+<li>하루나 한 주를 꾸준하게 돌아보면서 스스로에 대한 문제를 발견하는 것에도 주춤함이 있었다.</li>
+<li>하반기에는 <strong>개인 커리어 정리와 더불어 나를 발견하는 시간을 충분히 가지고 스킬적으로 성장할 수 있는 강의를 들으면서 책도 많이 읽고 기록하는 것에 시간을 많이 쓸 것이다.</strong></li>
+</ul>
+<p style='display: block; margin: 0 0 24px 0' />
+<p><strong>쉼이 없었다.</strong></p>
+<ul>
+<li>상반기에는 연차를 한 번도 다녀오지 않았다. 주말 말고는 쉬는 포인트를 전혀 두지 않았다.</li>
+<li>자연스럽게 주말 의존증이 생겼고, 주말을 제대로 쉬지 못하면 다음 한 주가 너무나 예민했다.</li>
+<li>그래서 그런가.. 상반기 마지막 한 주에 귀신같이 편도가 붓고 열이 올라 한 주를 버릴 수 밖에 없었다.</li>
+</ul>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="Try-이것만큼은-하반기에-최선을-다해볼-생각이다">Try (이것만큼은 하반기에 최선을 다해볼 생각이다)</h3>
+<ul>
+<li>내 커리어를 정리하고 '나'에 대해서 질문하고 답변하면서 돌아볼 수 있는 시간을 반드시 가질 것이다.</li>
+<li>꾸준한 삶을 다시 되찾을 것이다. 하루하루를 소중하게 생각하며, '나'에게 집중한 삶을 살 수 있는 습관을 만들 것이다. '이렇게 살아야지' 보다는 정신적인 건강함을 위한 뇌이징에 가깝다.</li>
+<li>한 달에 2권 이상의 책을 읽고 (아침, 출퇴근, 저녁 시간 활용) 기록하면서 억지스럽지 않은 독서 습관을 만들 것이다.</li>
+<li>데이터/Next 강의 2개를 완강할 것이다. (노션 트래킹 대시보드를 다시 활용할 예정이다.)</li>
+<li>더 즐거운 삶을 살기 위해서 체력을 기르는 운동을 꾸준하게 할 것이다.</li>
+</ul>
+<p style='display: block; margin: 0 0 48px 0' />
+<h3 id="간단하게-작성하는-상반기의-000">간단하게 작성하는 상반기의 000</h3>
+<ul>
+<li>상반기의 <strong>책</strong> : <a href="https://hankyeol-dev.github.io/2023-05-22/">신수정 - '일의 격'</a></li>
+<li>상반기의 <strong>글</strong> : 롱블랙 - '최인아 - 일을 열심히 하는 것과, 인생을 잘 사는 건 다르지 않다'</li>
+<li>상반기의 <strong>제도</strong> : 만나이 통일 - 30살에서 28살이 되는 기적</li>
+<li>상반기의 <strong>드라마</strong> : 더글로리</li>
+<li>상반기의 <strong>영화</strong> : 엘리멘탈</li>
+<li>상반기의 <strong>음악</strong> : (정말 고민을 많이 했지만..) <a href="https://music.youtube.com/watch?v=-tdEWw_nYPs&#x26;feature=share">msftz - 초록숲</a></li>
+<li>상반기의 <strong>유튜브</strong> : 피식대학 쇼츠 - Daily Korean</li>
+</ul>
+<p style='display: block; margin: 0 0 48px 0' />
+<p><strong>Try</strong> 항목에 작성한 내용을 기반하여서 2023년 하반기 &#x26; 연말 회고를 진행하면 좋겠다. 결국에는 내가 잘 살아보고자 하는 발버둥인데 멋지게 하면 좋으니까 상반기 회고를 바탕으로 열심히 살아보려고 한다.</p>
+<p><strong><em>새로운 도전에도 늘 관심이 많으니 다양한 연락도 언제든지 좋다.</em></strong></p>
+<p style='display: block; margin: 0 0 24px 0' /></div><div class="w-full mt-3"></div></div><div class="postPage-toc-container"><p class="text-[#343a40] text-sm border-b pb-1 mb-2">목차</p><div class="postPage-toc"><a>들어가면서,</a><a>2023년 상반기 총평</a><a>Keep</a><a>Problem</a><a>Try (이것만큼은 하반기에 최선을 다해볼 생각이다)</a><a>간단하게 작성하는 상반기의 000</a></div></div></section><section class="postNav-container"><p class="text-xl font-medium text-[#495057] mb-4">이어지는 글,</p><div class="postNav-card-container"><div class="md:w-[50%] w-full postCard-hover"><a class="postNav-card" href="/2023-06-26/"><div class="postNav-icon">👨‍💻</div><div class="postNav-info-container"><h3 class="postNav-title">VSCode에서 커스텀 스니펫(코드조각) 등록하여 효율성 조금 높이기</h3><p class="postNav-date">2023-06-26</p></div></a></div></div></section></section><footer class="footer" id="footer"><div class="footer-container"><p class="text-sm font-normal text-[#212529]">여기까지 스크롤을 내려주셔서 감사합니다 :-)</p><div class="footer-info-container"><p class="text-sm font-light text-[#343a40]">© 2023 hankyeolk</p><div class="footer-aboutMe"><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="LinkedIn"><a href="https://www.linkedin.com/in/hankyeolk/" target="_blank">LinkedIn</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="notion"><a href="https://bit.ly/notion-hk" target="_blank">notion</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Github"><a href="https://github.com/hankyeol-dev" target="_blank">Github</a></button><button class="footer-aboutMe-btn footer-aboutMe-btn-hover" id="Resume"><a href="https://bit.ly/notion-resume-hk" target="_blank">Resume</a></button></div></div></div></footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2023-07-07/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
